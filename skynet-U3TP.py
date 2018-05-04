@@ -15,3 +15,5 @@ def fuerzaBrutaPD(caracteres,longitud):
             else:
                 cache[n]=cache[n]+cache[n-1]
     return cache[longitud]
+def distLevenshtein(string1,string2):
+    return 3
