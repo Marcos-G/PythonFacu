@@ -28,4 +28,4 @@ def distLevenshtein(str1,str2):
     print(d)
     return d[len(str1)][len(str2)]
 
-print(distLevenshtein("aserrejeja","aerrejeja"))
+print(distLevenshtein("aserrejeja","aerjrejeja"))
