@@ -15,4 +15,4 @@ def fuerzaBrutaPD(caracteres,longitud):
             else:
                 cache[n]=cache[n]+cache[n-1]
     return cache[longitud]
-aserejejea
+aserejejeasad
