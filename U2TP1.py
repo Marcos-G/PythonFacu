@@ -16,7 +16,7 @@ def ordenRaro(vector):
         else:
             append(izq, valor)
 
-        medio = pop(ordenado)
+    medio = pop(ordenado)
 
     while length(izq) > 0:
         append(ordenado, pop(izq))
