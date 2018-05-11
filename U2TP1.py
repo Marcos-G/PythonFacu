@@ -7,6 +7,7 @@ def esPar(x):
 
 def ordenRaro(vector):
     ordenado = mergeSort(vector)
+    print(ordenado)
     izq = LinkedList()
     der = LinkedList()
     while length(ordenado) > 1:
