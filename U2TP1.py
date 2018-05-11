@@ -1,4 +1,5 @@
-
+from linkedlist import *
+from mergesort import *
 def esPar(x):
     if x <= 0:
         x = -x
