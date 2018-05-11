@@ -15,8 +15,6 @@ def ordenRaro(vector):
             add(der, valor)
         else:
             append(izq, valor)
-        print(der)
-        print(izq)
     medio = pop(ordenado)
 
     while length(izq) > 0:
@@ -33,4 +31,5 @@ append(list,36)
 append(list,32)
 append(list,45)
 append(list,0)
+print(list)
 print(ordenRaro(list))
