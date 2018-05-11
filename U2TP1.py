@@ -26,11 +26,11 @@ def ordenRaro(vector):
 
     while length(der) > 0:
         append(ordenado, pop(der))
+    return ordenado
 list=LinkedList()
 append(list,3)
 append(list,36)
 append(list,32)
 append(list,45)
 append(list,0)
-print(list)
 print(ordenRaro(list))
