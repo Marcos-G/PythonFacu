@@ -1,0 +1,13 @@
+﻿2.a-
+1:C+2T(n/2)      O(n)=n
+2:O(n)=n
+b-Es mas eficiente el algoritmo iterativo porque los llamados a función, porque el primero no sirve para todos los casos y porque el espacio en memoria utilizado por el primero es mucho mayor.
+c-para los tamaños que no son  potencia de 2.
+
+3
+1. T(n) = 2T(n/2) + n​4
+2. T(n) = 2T(7n/10) + n
+3. T(n) = 16T(n/4) + n​2
+4. T(n) = 7T(n/3) + n​2
+5. T(n) = 7T(n/2) + n​2
+6. T(n) = 2T(n/4) + ​√​n
