@@ -42,8 +42,11 @@ def maximoComunDivisor(a,b):
 primos=[2,3,5,7,11,13,17,19,23,29,31,37,41,43,47]
 def esPrimo(a):
     n=1
-    for num in primos:
-        if(num<sqrt(a)):
-            n*=num
-            print(a)
+    sq=sqrt(a)
+    i=0
+    while(primos[i]<sq)
+            n*=primos[i]
+    if(maximoComunDivisor(primos,a)):
+        return True
+    return False
 print(esPrimo(545))
