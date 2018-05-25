@@ -1,3 +1,4 @@
+from math import sqrt
 def fuerzaBrutaDyV(caracteres,longitud):
     n1=1
     n2=1
@@ -40,7 +41,9 @@ def maximoComunDivisor(a,b):
     return b
 primos=[2,3,5,7,11,13,17,19,23,29,31,37,41,43,47]
 def esPrimo(a):
+    n=1
     for num in primos:
-        a*=num
-        print(a)
+        if(num<sqrt(a)):
+            n*=num
+            print(a)
 print(esPrimo(1))
