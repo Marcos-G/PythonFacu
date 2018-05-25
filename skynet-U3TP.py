@@ -86,7 +86,6 @@ def gestorDeTareas(aplicaciones,M):#matriz de nx3(nombre,prioridad,consumo)
     print("El consumo actual es menor a ",M," y la utilidad es de ",best)
 
 def optimizarTareas(aplicaciones,c,a,M,best):
-    print(len(aplicaciones),c,a,M,best)
     if(len(aplicaciones)==0):
         if(a>best):
             return (a,[])
@@ -133,7 +132,20 @@ def gestorDeTareasVoraz(aplicaciones,M):#matriz de nx3(nombre,prioridad,consumo)
             print("Se cerraron las siguientes aplicaciones:")
         print(aplicaciones[n][0])
     print("El consumo actual es menor a ",M," y la utilidad es de ",uti)
-aplicaciones=[["App1",randint(1,10),randint(0,100)],["App2",randint(1,10),randint(0,100)],["App3",randint(1,10),randint(0,100)],["App4",randint(1,10),randint(0,100)],["App5",randint(1,10),randint(0,100)],["App6",randint(1,10),randint(0,100)],["App7",randint(1,10),randint(0,100)],["App8",randint(1,10),randint(0,100)],["App9",randint(1,10),randint(0,100)],["App10",randint(1,10),randint(0,100)]]
-gestorDeTareas(aplicaciones,400)
-aplicaciones=[["App1",randint(1,10),randint(0,100)],["App2",randint(1,10),randint(0,100)],["App3",randint(1,10),randint(0,100)],["App4",randint(1,10),randint(0,100)],["App5",randint(1,10),randint(0,100)],["App6",randint(1,10),randint(0,100)],["App7",randint(1,10),randint(0,100)],["App8",randint(1,10),randint(0,100)],["App9",randint(1,10),randint(0,100)],["App10",randint(1,10),randint(0,100)]]
-gestorDeTareasVoraz(aplicaciones,400)
+def t800(costos):
+    destruidas=1
+    primos=[2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97, 101, 103, 107, 109, 113]
+    for n in range(len(costos):
+        mini=0
+        while(destruidas%primos[mini]==0):
+            mini+=1
+        min=costos[n][mini]
+        for i in range(0,len(costos)):
+            if(min>costos[n][i] and destruidas%primos[i]!=0):
+                min=costos[n][i]
+                mini=i
+        print("El T800-",n," destruira la ciudad ",mini)
+        destruidas*=primos[mini]
+
+mat=[[randint(1,100)] for i in range(20)] for n in range(20)
+t800(mat)
