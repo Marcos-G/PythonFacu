@@ -48,7 +48,6 @@ def esPrimo(a):
             n*=primos[i]
             i+=1
     if(maximoComunDivisor(n,a)==1):
-        print("true")
         return True
     return False
 print(esPrimo(547))
