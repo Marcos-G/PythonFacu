@@ -149,4 +149,4 @@ def t800(costos):
 
 mat=[[randint(1,100) for i in range(20)] for n in range(20)]
 print(mat)
-t800(mat[0])
+t800(mat)
