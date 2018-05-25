@@ -50,5 +50,6 @@ def esPrimo(a):
     if(maximoComunDivisor(n,a)==1):
         return True
     return False
-
+def gestorDeTareas(aplicaciones)://matriz de nx3
+    
 print(esPrimo(547))
