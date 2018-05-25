@@ -126,11 +126,11 @@ def gestorDeTareasVoraz(aplicaciones,M):#matriz de nx3(nombre,prioridad,consumo)
         uti+=aplicaciones[i][1]
         i+=1
     print (aplicaciones)
-    print("Se cerraron las siguientes aplicaciones:")
+    print("Se mantuvieron las siguientes aplicaciones:")
     for n in range(len(aplicaciones)):
         if(n==i):
-            print("Se mantuvieron las siguientes aplicaciones:")
-        print(aplicaciones[i][0])
+            print("Se cerraron las siguientes aplicaciones:")
+        print(aplicaciones[n][0])
     print("El consumo actual es menor a ",M," y la utilidad es de ",uti)
 aplicaciones=[["App1",randint(1,10),randint(0,100)],["App2",randint(1,10),randint(0,100)],["App3",randint(1,10),randint(0,100)],["App4",randint(1,10),randint(0,100)],["App5",randint(1,10),randint(0,100)],["App6",randint(1,10),randint(0,100)],["App7",randint(1,10),randint(0,100)],["App8",randint(1,10),randint(0,100)],["App9",randint(1,10),randint(0,100)],["App10",randint(1,10),randint(0,100)]]
 gestorDeTareas(aplicaciones,400)
