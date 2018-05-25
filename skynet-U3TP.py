@@ -53,7 +53,7 @@ def esPrimo(a):
     if(maximoComunDivisor(n,a)==1):
         return True
     return False
-def gestorDeTareas(aplicaciones):#matriz de nx3(nombre,prioridad,consumo)
+def gestorDeTareas(aplicaciones,M):#matriz de nx3(nombre,prioridad,consumo)
     falta=True
     while(falta):
         falta=False
@@ -72,6 +72,13 @@ def gestorDeTareas(aplicaciones):#matriz de nx3(nombre,prioridad,consumo)
                 aplicaciones[i]=aplicaciones[i+1]
                 aplicaciones[i+1]=temp
                 falta=True
+    best=0
+    #optimizarTareas(aplicaciones,0,a,M,best)
     print(aplicaciones)
-
+    print(aplicaciones[1:])
+def optimizarTareas(aplicaciones,c,a,M,best):
+    if(len(aplicaciones)==0):
+        if(c<M):
+            return a
+    best=optimizartareas(aplicaciones[])
 gestorDeTareas([["App1",randint(1,10),randint(0,100)],["App2",randint(1,10),randint(0,100)],["App3",randint(1,10),randint(0,100)],["App4",randint(1,10),randint(0,100)],["App5",randint(1,10),randint(0,100)],["App6",randint(1,10),randint(0,100)],["App7",randint(1,10),randint(0,100)],["App8",randint(1,10),randint(0,100)],["App9",randint(1,10),randint(0,100)],["App10",randint(1,10),randint(0,100)]])
