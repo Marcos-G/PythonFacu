@@ -38,4 +38,4 @@ def maximoComunDivisor(a,b):
         a-=b
         a%=b
     return b
-print(maximoComunDivisor(27,18))
+print(maximoComunDivisor(300,150))
