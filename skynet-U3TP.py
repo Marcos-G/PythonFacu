@@ -135,7 +135,7 @@ def gestorDeTareasVoraz(aplicaciones,M):#matriz de nx3(nombre,prioridad,consumo)
 def t800(costos):
     destruidas=1
     primos=[2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97, 101, 103, 107, 109, 113]
-    for n in range(len(costos):
+    for n in range(len(costos)):
         mini=0
         while(destruidas%primos[mini]==0):
             mini+=1
@@ -147,5 +147,5 @@ def t800(costos):
         print("El T800-",n," destruira la ciudad ",mini)
         destruidas*=primos[mini]
 
-mat=[[randint(1,100)] for i in range(20)] for n in range(20)
-t800(mat)
+mat=[[[randint(1,100)] for i in range(20)] for n in range(20)]
+t800(mat[0])
