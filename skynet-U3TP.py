@@ -94,9 +94,11 @@ def optimizarTareas(aplicaciones,c,a,M,best):
     (n2Best,sol2)=optimizarTareas(aplicaciones[1:],c,a,M,n1Best)
     print("volvio")
     if(n2Best>n1Best):
-        return (n2Best,sol2.insert(0,1))
+        sol2.insert(0,1)
+        return (n2Best,sol2)
     elif(n1Best>best):
-        return (n1Best,sol1.insert(0,1))
+        sol1.insert(0,0)
+        return (n1Best,sol1)
     else:
         return (best,None)
 
