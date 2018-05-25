@@ -38,4 +38,9 @@ def maximoComunDivisor(a,b):
         a-=b
         a%=b
     return b
-print(maximoComunDivisor(300,150))
+primos=[2,3,5,7,11,13,17,19,23,29,31,37,41,43,47]
+def esPrimo(a):
+    for num in primos:
+        a*=num
+        print(a)
+print(esPrimo(1))
