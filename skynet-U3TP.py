@@ -108,5 +108,30 @@ def optimizarTareas(aplicaciones,c,a,M,best):
         return (n1Best,sol1)
     else:
         return (best,None)
-
-gestorDeTareas([["App1",randint(1,10),randint(0,100)],["App2",randint(1,10),randint(0,100)],["App3",randint(1,10),randint(0,100)],["App4",randint(1,10),randint(0,100)],["App5",randint(1,10),randint(0,100)],["App6",randint(1,10),randint(0,100)],["App7",randint(1,10),randint(0,100)],["App8",randint(1,10),randint(0,100)],["App9",randint(1,10),randint(0,100)],["App10",randint(1,10),randint(0,100)]],400)
+def gestorDeTareasVoraz(aplicaciones,M):#matriz de nx3(nombre,prioridad,consumo)
+    falta=True
+    while(falta):
+        falta=False
+        for i in range(len(aplicaciones)-1):
+            if(aplicaciones[i][2]>aplicaciones[i+1][2]):
+                temp=aplicaciones[i]
+                aplicaciones[i]=aplicaciones[i+1]
+                aplicaciones[i+1]=temp
+                falta=True
+    uti=0
+    c=0
+    i=0
+    while(c<M):
+        c+=aplicaciones[i][2]
+        uti+=aplicaciones[i][1]
+        i+=1
+    print (aplicaciones)
+    print("Se cerraron las siguientes aplicaciones:")
+    for n in range(len(aplicaciones)):
+        if(n==i):
+            print("Se mantuvieron las siguientes aplicaciones:")
+        print(aplicaciones[i][0])
+    print("El consumo actual es menor a ",M," y la utilidad es de ",uti)
+aplicaciones=[["App1",randint(1,10),randint(0,100)],["App2",randint(1,10),randint(0,100)],["App3",randint(1,10),randint(0,100)],["App4",randint(1,10),randint(0,100)],["App5",randint(1,10),randint(0,100)],["App6",randint(1,10),randint(0,100)],["App7",randint(1,10),randint(0,100)],["App8",randint(1,10),randint(0,100)],["App9",randint(1,10),randint(0,100)],["App10",randint(1,10),randint(0,100)]]
+gestorDeTareas(aplicaciones,400)
+gestorDeTareasVoraz(aplicaciones,400)
