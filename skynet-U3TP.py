@@ -92,7 +92,7 @@ def optimizarTareas(aplicaciones,c,a,M,best):
             return(best,None)
     a+=aplicaciones[0][1]
     (n2Best,sol2)=optimizarTareas(aplicaciones[1:],c,a,M,n1Best)
-    if(n2Best>best):
+    if(n2Best>n1Best):
         return (n2Best,sol2.insert(0,1))
     elif(n1Best>best):
         return (n1Best,sol1.insert(0,1))
