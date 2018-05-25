@@ -1,4 +1,5 @@
 from math import sqrt
+from random import randint
 def fuerzaBrutaDyV(caracteres,longitud):
     n1=1
     n2=1
@@ -41,6 +42,8 @@ def maximoComunDivisor(a,b):
     return b
 primos=[2,3,5,7,11,13,17,19,23,29,31,37,41,43,47]
 def esPrimo(a):
+    if(a>2000):
+        print("algoritmo valido hasta 2000")
     n=1
     sq=sqrt(a)
     i=0
@@ -51,5 +54,15 @@ def esPrimo(a):
         return True
     return False
 def gestorDeTareas(aplicaciones)://matriz de nx3
-    
-print(esPrimo(547))
+    falta=True
+    while(falta):
+        falta=False
+        for i in range(len(aplicaciones)-1):
+            if(aplicaciones[i][1]>aplicaciones[i+1][1]):
+                temp=aplicaciones[i]
+                aplicaciones[i]=aplicaciones[i+1]
+                aplicaciones[i+1]=temp
+                falta=True
+    print(aplicaciones)
+
+gestorDeTareas([["App1",randint(1,10),randint(0,100)],["App2",randint(1,10),randint(0,100)],["App3",randint(1,10),randint(0,100)],["App4",randint(1,10),randint(0,100)],["App5",randint(1,10),randint(0,100)],["App6",randint(1,10),randint(0,100)],["App7",randint(1,10),randint(0,100)],["App8",randint(1,10),randint(0,100)],["App9",randint(1,10),randint(0,100)],["App10",randint(1,10),randint(0,100)]])
