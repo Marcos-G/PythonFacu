@@ -50,4 +50,5 @@ def esPrimo(a):
     if(maximoComunDivisor(n,a)==1):
         return True
     return False
+
 print(esPrimo(547))
