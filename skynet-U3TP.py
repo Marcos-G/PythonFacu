@@ -86,7 +86,7 @@ def gestorDeTareas(aplicaciones,M):#matriz de nx3(nombre,prioridad,consumo)
     print("El consumo actual es menor a ",M," y la utilidad es de ",best)
 
 def optimizarTareas(aplicaciones,c,a,M,best):
-    print(c,a,M,best)
+    print(len(aplicaciones),c,a,M,best)
     if(len(aplicaciones)==0):
         if(a>best):
             return (a,[])
