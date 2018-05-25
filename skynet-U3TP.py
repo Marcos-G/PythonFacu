@@ -77,8 +77,8 @@ def gestorDeTareas(aplicaciones,M):#matriz de nx3(nombre,prioridad,consumo)
     print(best)
     print(sol)
 def optimizarTareas(aplicaciones,c,a,M,best):
-    print(len(aplicaciones)," ",c,a,best)
     if(len(aplicaciones)==0):
+        print(len(aplicaciones)," ",c,a,best)
         if(a>best):
             return (a,[])
         else:
@@ -92,6 +92,7 @@ def optimizarTareas(aplicaciones,c,a,M,best):
             return(best,None)
     a+=aplicaciones[0][1]
     (n2Best,sol2)=optimizarTareas(aplicaciones[1:],c,a,M,n1Best)
+    print("volvio")
     if(n2Best>n1Best):
         return (n2Best,sol2.insert(0,1))
     elif(n1Best>best):
