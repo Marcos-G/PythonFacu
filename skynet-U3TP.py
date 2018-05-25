@@ -46,9 +46,9 @@ def esPrimo(a):
     i=0
     while(primos[i]<sq):
             n*=primos[i]
-            i++
+            i+=1
     if(maximoComunDivisor(n,a)==1):
         print("true")
         return True
     return False
-print(esPrimo(545))
+print(esPrimo(547))
