@@ -44,7 +44,7 @@ def esPrimo(a):
     n=1
     sq=sqrt(a)
     i=0
-    while(primos[i]<sq)
+    while(primos[i]<sq):
             n*=primos[i]
     if(maximoComunDivisor(primos,a)):
         return True
