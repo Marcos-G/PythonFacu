@@ -76,9 +76,5 @@ def gestorDeTareas(aplicaciones,M):#matriz de nx3(nombre,prioridad,consumo)
     #optimizarTareas(aplicaciones,0,a,M,best)
     print(aplicaciones)
     print(aplicaciones[1:])
-def optimizarTareas(aplicaciones,c,a,M,best):
-    if(len(aplicaciones)==0):
-        if(c<M):
-            return a
-    best=optimizartareas(aplicaciones[])
-gestorDeTareas([["App1",randint(1,10),randint(0,100)],["App2",randint(1,10),randint(0,100)],["App3",randint(1,10),randint(0,100)],["App4",randint(1,10),randint(0,100)],["App5",randint(1,10),randint(0,100)],["App6",randint(1,10),randint(0,100)],["App7",randint(1,10),randint(0,100)],["App8",randint(1,10),randint(0,100)],["App9",randint(1,10),randint(0,100)],["App10",randint(1,10),randint(0,100)]])
+
+gestorDeTareas([["App1",randint(1,10),randint(0,100)],["App2",randint(1,10),randint(0,100)],["App3",randint(1,10),randint(0,100)],["App4",randint(1,10),randint(0,100)],["App5",randint(1,10),randint(0,100)],["App6",randint(1,10),randint(0,100)],["App7",randint(1,10),randint(0,100)],["App8",randint(1,10),randint(0,100)],["App9",randint(1,10),randint(0,100)],["App10",randint(1,10),randint(0,100)]],200)
