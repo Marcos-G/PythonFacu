@@ -31,6 +31,11 @@ def maximoComunDivisor(a,b):
         a+=b
         b=a-b
         a-=b
-    print(a)
-    print(b)
-maximoComunDivisor(3,2)
+    a%=b
+    while(a!=0):
+        a+=b
+        b=a-b
+        a-=b
+        a%=b
+    return b
+print(maximoComunDivisor(46,38))
