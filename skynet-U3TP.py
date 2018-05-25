@@ -147,6 +147,11 @@ def t800(costos):
         print("El T800-",n," destruira la ciudad ",mini)
         destruidas*=primos[mini]
 
-mat=[[randint(1,100) for i in range(5)] for n in range(5)]
+mat=[[29, 27, 9, 4, 31],
+[26, 7, 55, 37, 83],
+[85, 12, 88, 41, 17],
+[19, 35, 41, 19, 79],
+[89, 72, 83, 31, 29]]
+
 print(mat)
 t800(mat)
