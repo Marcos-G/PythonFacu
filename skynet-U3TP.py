@@ -73,8 +73,8 @@ def gestorDeTareas(aplicaciones,M):#matriz de nx3(nombre,prioridad,consumo)
                 aplicaciones[i+1]=temp
                 falta=True
     (best,sol)=optimizarTareas(aplicaciones,0,0,M,0)
-    print aplicaciones
-    print sol
+    print (aplicaciones)
+    print (sol)
     print("Se cerraron las siguientes aplicaciones:")
     for i in range(len(aplicaciones)):
         if(not sol[i]):
