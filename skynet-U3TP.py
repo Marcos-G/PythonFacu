@@ -46,4 +46,4 @@ def esPrimo(a):
         if(num<sqrt(a)):
             n*=num
             print(a)
-print(esPrimo(1))
+print(esPrimo(545))
