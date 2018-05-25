@@ -53,7 +53,16 @@ def esPrimo(a):
     if(maximoComunDivisor(n,a)==1):
         return True
     return False
-def gestorDeTareas(aplicaciones)://matriz de nx3
+def gestorDeTareas(aplicaciones):#matriz de nx3(nombre,prioridad,consumo)
+    falta=True
+    while(falta):
+        falta=False
+        for i in range(len(aplicaciones)-1):
+            if(aplicaciones[i][2]<aplicaciones[i+1][2]):
+                temp=aplicaciones[i]
+                aplicaciones[i]=aplicaciones[i+1]
+                aplicaciones[i+1]=temp
+                falta=True
     falta=True
     while(falta):
         falta=False
