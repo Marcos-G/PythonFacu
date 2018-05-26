@@ -176,6 +176,8 @@ def generar_mat_preprocesada(M):
 		print(Mord[i])
 	return OP
 def optimizarViaje(M):
+    global P
+    global OP
     maximo=500
     n=len(M)
     OP=generar_mat_preprocesada(M)#reordeno la matriz para dinamizar la busqueda
