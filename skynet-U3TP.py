@@ -165,8 +165,8 @@ while(True):
     print("6-ASESINAR AL LIDER")
     respuesta=input("Ingrese que opcion quiere utilizar:")
     if(respuesta=='1'):
-        longitud=input("Ingrese longitud de su contrasena:")
-        caracteres=input("Ingrese cantidad de caracteres posibles:")
+        longitud=int(input("Ingrese longitud de su contrasena:"))
+        caracteres=int(input("Ingrese cantidad de caracteres posibles:"))
         milisPD=time()
         posibilidades=fuerzaBrutaPD(caracteres,longitud)
         milisPD=time()-milisPD
