@@ -121,7 +121,7 @@ def gestorDeTareasVoraz(aplicaciones,M):#matriz de nx3(nombre,prioridad,consumo)
     uti=0
     c=0
     i=0
-    while((c+aplicaciones[i][2])<M):
+    while( i<len(aplicaciones) and (c+aplicaciones[i][2])<M):
         c+=aplicaciones[i][2]
         uti+=aplicaciones[i][1]
         i+=1
