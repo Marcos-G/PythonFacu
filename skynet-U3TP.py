@@ -1,5 +1,6 @@
 from math import sqrt
 from random import randint
+from viajero import optimizarViaje
 def fuerzaBrutaDyV(caracteres,longitud):
     n1=1
     n2=1
@@ -132,7 +133,7 @@ def gestorDeTareasVoraz(aplicaciones,M):#matriz de nx3(nombre,prioridad,consumo)
             print("Se cerraron las siguientes aplicaciones:")
         print(aplicaciones[n][0])
     print("El consumo actual es menor a ",M," y la utilidad es de ",uti)
-def t800(costos):
+def terminators(costos):
     destruidas=1
     primos=[2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97, 101, 103, 107, 109, 113]
     for n in range(len(costos)):
@@ -141,7 +142,7 @@ def t800(costos):
             mini+=1
         min=costos[n][mini]
         for i in range(0,len(costos)):
-            if(min>costos[n][i] and destruidas%primos[i]!=0):
+            if(min>costos[n][i] and destruidas%primos[i]!=0):#si el costo es menor a el ultimo minimo encontrado y la ciudad aún no tiene un terminator asignado la guardo como posible objetivo
                 min=costos[n][i]
                 mini=i
         print("El T800-",n," destruira la ciudad ",mini)
@@ -153,6 +154,26 @@ mat=[[29, 27, 9, 4, 31],
 [85, 1, 88, 1, 17],
 [19, 1, 41, 1, 1],
 [1, 1, 83, 1, 1]]
+while(true):
+    print("MENU PRINCIPAL")
+    print("1-TEST DE CONTRASEÑA")
+    print("2-CONFIGURAR TOLERANCIA DE CONTRASEÑA")
+    print("3-DESPERTADOR!!")
+    print("4-OPTIMIZAR USO DE BATERIA")
+    print("5-DESTRUIR EL MUNDO")
+    print("6-ASESINAR AL LIDER")
+    respuesta=input("Ingrese que opcion quiere utilizar:")
+    if(respuesta==1):
+        print(1)
+    elif(respuesta==2):
 
-print(mat)
-t800(mat)
+    elif(respuesta==3):
+
+    elif(respuesta==4):
+
+    elif(respuesta==5):
+
+    elif(respuesta==6):
+
+    else:
+        print("Opcion incorrecta")
