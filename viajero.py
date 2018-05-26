@@ -115,7 +115,7 @@ def viajero(costo,city_ant,minimoHEM,control,n,repetir,rec,rep,city_obj,todos,de
             	print("     "*(len(rec)-1),recr,end="")
             if costor>=minimoHEM:#si al sumar el costo del viaje se supera el minimoHEM, o si no se puede repetir y si se repitió una ciudad
                 if(debug):
-                	print("--",costor,"MALO(Superó el minimoHEM)")
+                	print("--",costor,"MALO(Supero el minimoHEM)")
                 progress(irep)
                 continue#no evaluo la rama porque no me va a servir
             elif ((not repetir) and (not (exito%controlr==0))):#si al sumar el costo del viaje se supera el minimoHEM, o si no se puede repetir y si se repitió una ciudad
