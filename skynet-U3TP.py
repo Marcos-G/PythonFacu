@@ -173,7 +173,7 @@ while(True):
         milisDV=time()
         posibilidades=fuerzaBrutaDyV(caracteres,longitud)
         milisDV=time()-milisDV
-        print("Un ataque por fuerza Bruta tendrá exito en menos de",posibilidades*1.3,"sefundos")
+        print("Un ataque por fuerza Bruta tendra exito en menos de",posibilidades*1.3,"segundos")
         print("Divide y venceras demoro",milisDV,"milisegundos mientras que Programacion dinamica demoro",milisPD,"milisegundos")
     elif(respuesta=='2'):
         print(2)
