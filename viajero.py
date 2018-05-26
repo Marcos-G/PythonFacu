@@ -198,7 +198,7 @@ M=[
 	[None,1,0,None,None,None,2,3],
 	[2,0,None,None,None,2,None,1],
 	[None,None,None,None,None,3,1,None]]#variable global de la matriz de costos
-maximo=max(M)
+maximo=100
 for i in range(n):#imprimo bonito la matriz
 	print(M[i])
 OP=generar_mat_preprocesada(M)
