@@ -185,7 +185,27 @@ while(True):
                 print("Incorrecto")
         print("Correcto")
     elif(respuesta=='3'):
-        print(3)
+        despierto=False
+        while(not despierto):
+            if(randint(0,1)==0):
+                num1=randint(1,2000)
+                num2=randint(1,2000)
+                respuesta=input("Ingrese la fraccion simplificada de",num1,"/",num2,":")
+                div=maximoComunDivisor(num1,num2)
+                num1/=div
+                num2/=div
+                nums=respuesta.split('/')
+                if(len(nums)==2 and num1==int(nums[0]) and num2==int(nums[1])):
+                    print("Estas despierto!")
+                    despierto=True
+            else:
+                num=randint(1,2000)
+                respuesta=input(num,"es primo?(S/N):")
+                primo=esPrimo(num)
+                if(( primo and input=='S') or (not primo and input=='N')):
+                    print("Estas despierto")
+                    despierto=True
+
     elif(respuesta=='4'):
         print(4)
     elif(respuesta=='5'):
