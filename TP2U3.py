@@ -9,6 +9,8 @@ def quick_sort(A, p, f):
 def pasada(L,p,f):
     i=p-1
     r=int((p+f)/2)
+    print(L[r])
+    print(r)
     L[r]+=L[f]
     L[f]=L[r]-L[f]
     L[r]-=L[f]
