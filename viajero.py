@@ -2,15 +2,6 @@ from funciones import *
 from time import time
 import random
 from time import time
-def generate_distance_matrix(n,maxi):#Genero la matriz de costos
-	#random.seed(2017)
-	M=[[0]*n for i in range(n)]
-	for i in range(n):
-		for j in range(i):
-			e=random.randint(1,maxi)
-			M[i][j]=e
-			M[j][i]=e
-	return M
 def generate_primos_array(n):#Genero un array de primos donde cada primo representa una ciudad
     P=[[0] for i in range(n)]
     pos=0
@@ -184,20 +175,7 @@ def generar_mat_preprocesada(M):
 	for i in range(n):#imprimo bonito la matriz
 		print(Mord[i])
 	return OP
-def eliminar_caminos(M,i,j):#elimino un camino a eleccion
-	M[i][j]=None
-	M[j][i]=None
-n=8
 
-M=[
-	[None,1,None,None,None,None,2,None],
-	[1,None,2,None,None,1,0,None],
-	[None,2,None,0,1,0,None,None],
-	[None,None,0,2,None,None,None,None],
-	[None,None,1,2,None,None,None,None],
-	[None,1,0,None,None,None,2,3],
-	[2,0,None,None,None,2,None,1],
-	[None,None,None,None,None,3,1,None]]#variable global de la matriz de costos
 maximo=100
 for i in range(n):#imprimo bonito la matriz
 	print(M[i])
