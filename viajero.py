@@ -172,8 +172,6 @@ def generar_mat_preprocesada(M):
 			Mord[i][minipos]=v
 			OP[i][j]=OP[i][minipos]
 			OP[i][minipos]=posj
-	for i in range(n):#imprimo bonito la matriz
-		print(Mord[i])
 	return OP
 def optimizarViaje(m):
     global P
