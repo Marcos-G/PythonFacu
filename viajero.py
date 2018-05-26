@@ -179,6 +179,7 @@ def optimizarViaje(m):
     global P
     global OP
     global M
+    global exito
     M=m
     maximo=500
     n=len(M)
