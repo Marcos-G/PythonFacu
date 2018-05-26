@@ -8,9 +8,9 @@ quick_sort(numeros)
 print(numeros)
 def quick_sort(A, p, f):
     if p < f:
-    q = pasada(A, p, f)
-    quick_sort(A, p, q - 1)
-    quick_sort(A, q + 1, f)
+        q = pasada(A, p, f)
+        quick_sort(A, p, q - 1)
+        quick_sort(A, q + 1, f)
 
 def pasada(L,p,f):
     i=p-1
