@@ -190,7 +190,7 @@ for i in range(n):
 Milis=time()#instante de inicio de busqueda
 print(maximo*n+1)
 inicial=0
-objetivo=6
+objetivo=0
 pasarPorTodasLasCiudades=True
 repetirCiudades=False
 debug=True
