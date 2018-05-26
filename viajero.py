@@ -175,7 +175,7 @@ def generar_mat_preprocesada(M):
 	for i in range(n):#imprimo bonito la matriz
 		print(Mord[i])
 	return OP
-n=10
+n=5
 M=generate_mendoza(n)
 maximo=100
 for i in range(n):#imprimo bonito la matriz
