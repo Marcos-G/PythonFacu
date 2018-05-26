@@ -27,9 +27,6 @@ for i in range(1,len(loteria[0])):
     for j in range(1,len(loteria)):
         numeros.append(loteria[j][i])
 print(numeros)
-numeros[0]+=numeros[1]
-numeros[1]=numeros[0]-numeros[1]
-numeros[0]-=numeros[1]
-print(numeros)
-quick_sort(numeros,0,len(numeros)-1)
+
+pasada(numeros,0,len(numeros)-1)
 print(numeros)
