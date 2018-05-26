@@ -19,9 +19,13 @@ def pasada(L,p,f):
     for j in range(p,f):
         if(L[j]<=L[f]):
             i+=1
+            print(L[i])
+            print(L[j])
             L[i]+=L[j]
             L[j]=L[i]-L[j]
             L[i]-=L[j]
+            print(L[i])
+            print(L[j])
     L[i+1]+=L[f]
     L[f]=L[i+1]-L[f]
     L[i+1]-=L[f]
