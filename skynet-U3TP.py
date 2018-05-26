@@ -125,7 +125,6 @@ def gestorDeTareasVoraz(aplicaciones,M):#matriz de nx3(nombre,prioridad,consumo)
         c+=aplicaciones[i][2]
         uti+=aplicaciones[i][1]
         i+=1
-    print (aplicaciones)
     print("Se mantuvieron las siguientes aplicaciones:")
     for n in range(len(aplicaciones)):
         if(n==i):
@@ -209,10 +208,12 @@ while(True):
     elif(respuesta=='4'):
         aplicaciones=[["App1",randint(1,10),randint(0,100)],["App2",randint(1,10),randint(0,100)],["App3",randint(1,10),randint(0,100)],["App4",randint(1,10),randint(0,100)],["App5",randint(1,10),randint(0,100)],["App6",randint(1,10),randint(0,100)],["App7",randint(1,10),randint(0,100)],["App8",randint(1,10),randint(0,100)],["App9",randint(1,10),randint(0,100)],["App10",randint(1,10),randint(0,100)]]
         consumo=int(input("Ingrese el consumo maximo:"))
+        print("Programacion dinamica y Backtracking")
         milisPD=time()
         gestorDeTareas(aplicaciones,consumo)
         milisPD=(time()-milisPD)*1000000
         aplicaciones=[["App1",randint(1,10),randint(0,100)],["App2",randint(1,10),randint(0,100)],["App3",randint(1,10),randint(0,100)],["App4",randint(1,10),randint(0,100)],["App5",randint(1,10),randint(0,100)],["App6",randint(1,10),randint(0,100)],["App7",randint(1,10),randint(0,100)],["App8",randint(1,10),randint(0,100)],["App9",randint(1,10),randint(0,100)],["App10",randint(1,10),randint(0,100)]]
+        print("Voraz")
         milisV=time()
         gestorDeTareasVoraz(aplicaciones,consumo)
         milisV=(time()-milisV)*1000000
