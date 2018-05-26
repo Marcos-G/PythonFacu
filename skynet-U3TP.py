@@ -176,7 +176,14 @@ while(True):
         print("Un ataque por fuerza Bruta tendra exito en menos de",posibilidades*1.3,"segundos")
         print("Divide y venceras demoro",milisDV,"microsegundos mientras que Programacion dinamica demoro",milisPD,"microsegundos")
     elif(respuesta=='2'):
-        print(2)
+        contra=input("Ingrese contraseña:")
+        tolerancia=int(input("Ingrese tolerancia:"))
+        valido=False
+        while(not valido):
+            valido=distLevenshtein(contra,input("Ingrese contrasena:"))
+            if(not valido):
+                print("Incorrecto")
+        print("Correcto")
     elif(respuesta=='3'):
         print(3)
     elif(respuesta=='4'):
