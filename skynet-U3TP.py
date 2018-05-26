@@ -147,11 +147,7 @@ def terminators(costos):
         destruidas*=primos[mini]
     print("pero es mas eficiente si se dan las siguientes combinaciones: 0-2, 1-3, 2-1, 3-4, 4-0")
 
-mat=[[29, 27, 9, 4, 31],
-[26, 7, 55, 1, 83],
-[85, 1, 88, 1, 17],
-[19, 1, 41, 1, 1],
-[1, 1, 83, 1, 1]]
+
 while(True):
     print("MENU PRINCIPAL")
     print("1-TEST DE CONTRASENA")
@@ -212,14 +208,21 @@ while(True):
         milisPD=time()
         gestorDeTareas(aplicaciones,consumo)
         milisPD=(time()-milisPD)*1000000
+        print("Demoro",milisPD,"microsegundos")
         aplicaciones=[["App1",randint(1,10),randint(0,100)],["App2",randint(1,10),randint(0,100)],["App3",randint(1,10),randint(0,100)],["App4",randint(1,10),randint(0,100)],["App5",randint(1,10),randint(0,100)],["App6",randint(1,10),randint(0,100)],["App7",randint(1,10),randint(0,100)],["App8",randint(1,10),randint(0,100)],["App9",randint(1,10),randint(0,100)],["App10",randint(1,10),randint(0,100)]]
         print("Voraz")
         milisV=time()
         gestorDeTareasVoraz(aplicaciones,consumo)
         milisV=(time()-milisV)*1000000
+        print("Demoro",milisV,"microsegundos")
 
     elif(respuesta=='5'):
-        print(5)
+        mat=[[29, 27, 9, 4, 31],
+        [26, 7, 55, 1, 83],
+        [85, 1, 88, 1, 17],
+        [19, 1, 41, 1, 1],
+        [1, 1, 83, 1, 1]]
+        terminators(mat)
     elif(respuesta=='6'):
         print(6)
     else:
