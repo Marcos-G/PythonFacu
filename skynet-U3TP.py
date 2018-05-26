@@ -92,14 +92,14 @@ def optimizarTareas(aplicaciones,c,a,M,best):
         if(a>best):
             return (a,[])
         else:
-            return (best,None)
+            return (best,[])
     (n1Best,sol1)=optimizarTareas(aplicaciones[1:],c,a,M,best)
     c+=aplicaciones[0][2]
     if(c>M):
         if(n1Best>best):
             return (n1Best,sol1.insert(0,False))
         else:
-            return(best,None)
+            return(best,[])
     a+=aplicaciones[0][1]
     (n2Best,sol2)=optimizarTareas(aplicaciones[1:],c,a,M,n1Best)
     if(n2Best>n1Best):
@@ -109,7 +109,7 @@ def optimizarTareas(aplicaciones,c,a,M,best):
         sol1.insert(0,False)
         return (n1Best,sol1)
     else:
-        return (best,None)
+        return (best,[])
 def gestorDeTareasVoraz(aplicaciones,M):#matriz de nx3(nombre,prioridad,consumo)
     falta=True
     while(falta):
