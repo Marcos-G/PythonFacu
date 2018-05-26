@@ -41,7 +41,6 @@ def maximoComunDivisor(a,b):
         b=a-b
         a-=b
         a%=b
-    print(b)
     return b
 primos=[2,3,5,7,11,13,17,19,23,29,31,37,41,43,47]
 def esPrimo(a):
@@ -210,7 +209,9 @@ while(True):
                     despierto=True
 
     elif(respuesta=='4'):
-        print(4)
+        aplicaciones=[["App1",randint(1,10),randint(0,100)],["App2",randint(1,10),randint(0,100)],["App3",randint(1,10),randint(0,100)],["App4",randint(1,10),randint(0,100)],["App5",randint(1,10),randint(0,100)],["App6",randint(1,10),randint(0,100)],["App7",randint(1,10),randint(0,100)],["App8",randint(1,10),randint(0,100)],["App9",randint(1,10),randint(0,100)],["App10",randint(1,10),randint(0,100)]]
+        consumo=int(input("Ingrese el consumo maximo:"))
+        gestorDeTareas(aplicaciones,consumo)
     elif(respuesta=='5'):
         print(5)
     elif(respuesta=='6'):
