@@ -189,10 +189,10 @@ for i in range(n):
     exito*=P[i]#multiplico todos los numeros primos que corresponden a cada ciudad para obtener el valor de exito, que me va a permitir saber que paso por todas o si pasó dos veces por una
 Milis=time()#instante de inicio de busqueda
 print(maximo*n+1)
-inicial=3
+inicial=0
 objetivo=6
 pasarPorTodasLasCiudades=True
-repetirCiudades=True
+repetirCiudades=False
 debug=True
 stairway_to_heaven=viajero(0,inicial,maximo*n+1,P[inicial], n,repetirCiudades,str(inicial),100.0,objetivo,pasarPorTodasLasCiudades,debug)#pido el mejor camino repitiendo y con todos los caminos, paso 0 para costo, 0 para la ciudad inicial, 100*n+1 de costo minimoHEM ya que el peor caso sería en el que todos los caminos cuestan el maximo en cuyo caso el mas barato costaria 100*n y sumo 1 para que si sucede el ultimo caso devuellva alguna de las posibilidades,2 de variable de control porque iniciamos en la ciudad cero que es el numero primo 2,n cantidad de ciudades y True para que se puedan repetir las ciudades
 print(time()-Milis, "s")#imprimo tiempo de busqueda
