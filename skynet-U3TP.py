@@ -1,6 +1,6 @@
 from math import sqrt
 from random import randint
-from viajero import optimizarViaje
+from viajero import optimizarViaje,generate_mendoza
 from time import *
 def fuerzaBrutaDyV(caracteres,longitud):
     n1=1
@@ -224,6 +224,6 @@ while(True):
         [1, 1, 83, 1, 1]]
         terminators(mat)
     elif(respuesta=='6'):
-        print(6)
+        optimizarViaje(generate_mendoza(5))
     else:
         print("Opcion incorrecta")
