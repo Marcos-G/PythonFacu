@@ -190,7 +190,8 @@ while(True):
             if(randint(0,1)==0):
                 num1=randint(1,2000)
                 num2=randint(1,2000)
-                respuesta=input("Ingrese la fraccion simplificada de",num1,"/",num2,":")
+                print("Ingrese la fraccion simplificada de",num1,"/",num2,":")
+                respuesta=input()
                 div=maximoComunDivisor(num1,num2)
                 num1/=div
                 num2/=div
@@ -200,7 +201,8 @@ while(True):
                     despierto=True
             else:
                 num=randint(1,2000)
-                respuesta=input(num,"es primo?(S/N):")
+                print(num,"es primo?(S/N):")
+                respuesta=input()
                 primo=esPrimo(num)
                 if(( primo and input=='S') or (not primo and input=='N')):
                     print("Estas despierto")
