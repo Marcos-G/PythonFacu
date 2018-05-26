@@ -10,10 +10,12 @@ def pasada(L,p,f):
     i=p-1
     r=int((p+f)/2)
     print(L[r])
-    print(r)
+    print(L[f])
     L[r]+=L[f]
     L[f]=L[r]-L[f]
     L[r]-=L[f]
+    print(L[r])
+    print(L[f])
     for j in range(p,f):
         if(L[j]<=L[f]):
             i+=1
