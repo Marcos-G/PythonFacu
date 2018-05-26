@@ -175,43 +175,23 @@ def generar_mat_preprocesada(M):
 	for i in range(n):#imprimo bonito la matriz
 		print(Mord[i])
 	return OP
-n=5
-M=generate_mendoza(n)#genero matriz de ejemplo
-maximo=100
-for i in range(n):#imprimo bonito la matriz
-	print(M[i])
-OP=generar_mat_preprocesada(M)#reordeno la matriz para dinamizar la busqueda
-for i in range(n):#imprimo bonito la matriz
-	print(OP[i])
-P=generate_primos_array(n)#genero tantos primos como ciudades
-exito=2#variable global que uso en la funcion viajero
-for i in range(n):
-    exito*=P[i]#multiplico todos los numeros primos que corresponden a cada ciudad para obtener el valor de exito, que me va a permitir saber que paso por todas o si pasó dos veces por una
-Milis=time()#instante de inicio de busqueda
-print(maximo*n+1)
-inicial=0
-objetivo=0
-pasarPorTodasLasCiudades=True
-repetirCiudades=False
-debug=True
-stairway_to_heaven=viajero(0,inicial,maximo*n+1,P[inicial], n,repetirCiudades,str(inicial),100.0,objetivo,pasarPorTodasLasCiudades,debug)#pido el mejor camino repitiendo y con todos los caminos, paso 0 para costo, 0 para la ciudad inicial, 100*n+1 de costo minimoHEM ya que el peor caso sería en el que todos los caminos cuestan el maximo en cuyo caso el mas barato costaria 100*n y sumo 1 para que si sucede el ultimo caso devuellva alguna de las posibilidades,2 de variable de control porque iniciamos en la ciudad cero que es el numero primo 2,n cantidad de ciudades y True para que se puedan repetir las ciudades
-print(time()-Milis, "s")#imprimo tiempo de busqueda
-print(stairway_to_heaven.costo)
-print_list(stairway_to_heaven.lista)
-print("")
-"""for i in range(n):
-	print(M[i])
-stairway_to_heaven=viajero(0,0,100*n+1,2, n,False)#Mejor camino sin repetir
-ElNodo=stairway_to_heaven.lista.head
-while ElNodo!=None:
-	print("=>",ElNodo.value, end="")
-	ElNodo=ElNodo.nextNode
-eliminar_caminos(M,4,3)#elimino un camino
-print("")
-for i in range(n):
-	print(M[i])
-stairway_to_heaven=viajero(0,0,100*n+1,2, n,True)#Mejor nodo repitiendo pero con un nodo eliminado
-ElNodo=stairway_to_heaven.lista.head
-while ElNodo!=None:
-	print("=>",ElNodo.value, end="")
-	ElNodo=ElNodo.nextNode"""
+def optimizarViaje(M):
+    maximo=max(M)
+    n=len(M)
+    OP=generar_mat_preprocesada(M)#reordeno la matriz para dinamizar la busqueda
+    P=generate_primos_array(n)#genero tantos primos como ciudades
+    inicial=0
+    objetivo=0
+    pasarPorTodasLasCiudades=True
+    repetirCiudades=False
+    debug=False
+    exito=2#variable global que uso en la funcion viajero
+    for i in range(n):
+        exito*=P[i]#multiplico todos los numeros primos que corresponden a cada ciudad para obtener el valor de exito, que me va a permitir saber que paso por todas o si pasó dos veces por una
+    Milis=time()#instante de inicio de busqueda
+    stairway_to_heaven=viajero(0,inicial,maximo*n+1,P[inicial], n,repetirCiudades,str(inicial),100.0,objetivo,pasarPorTodasLasCiudades,debug)#pido el mejor camino repitiendo y con todos los caminos, paso 0 para costo, 0 para la ciudad inicial, 100*n+1 de costo minimoHEM ya que el peor caso sería en el que todos los caminos cuestan el maximo en cuyo caso el mas barato costaria 100*n y sumo 1 para que si sucede el ultimo caso devuellva alguna de las posibilidades,2 de variable de control porque
+    print(time()-Milis, "s")#imprimo tiempo de busqueda
+    print(stairway_to_heaven.costo)
+    print_list(stairway_to_heaven.lista)
+    print("")
+optimizarViaje(generate_mendoza(5))
