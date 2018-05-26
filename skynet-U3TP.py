@@ -1,6 +1,7 @@
 from math import sqrt
 from random import randint
 from viajero import optimizarViaje
+from time import *
 def fuerzaBrutaDyV(caracteres,longitud):
     n1=1
     n2=1
@@ -164,7 +165,16 @@ while(True):
     print("6-ASESINAR AL LIDER")
     respuesta=input("Ingrese que opcion quiere utilizar:")
     if(respuesta=='1'):
-        print(1)
+        longitud=input("Ingrese longitud de su contrasena:")
+        caracteres=input("Ingrese cantidad de caracteres posibles:")
+        milisPD=time()
+        posibilidades=fuerzaBrutaPD(caracteres,longitud)
+        milisPD=time()-milisPD
+        milisDV=time()
+        posibilidades=fuerzaBrutaDyV(caracteres,longitud)
+        milisDV=time()-milisDV
+        print("Un ataque por fuerza Bruta tendrá exito en menos de",posibilidades*1.3,"sefundos")
+        print("Divide y venceras demoro",milisDV,"milisegundos mientras que Programacion dinamica demoro",milisPD,"milisegundos")
     elif(respuesta=='2'):
         print(2)
     elif(respuesta=='3'):
