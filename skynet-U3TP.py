@@ -157,23 +157,23 @@ mat=[[29, 27, 9, 4, 31],
 while(True):
     print("MENU PRINCIPAL")
     print("1-TEST DE CONTRASENA")
-    print("2-CONFIGURAR TOLERANCIA DE CONTRASEÑA")
+    print("2-CONFIGURAR TOLERANCIA DE CONTRASENA")
     print("3-DESPERTADOR!!")
     print("4-OPTIMIZAR USO DE BATERIA")
     print("5-DESTRUIR EL MUNDO")
     print("6-ASESINAR AL LIDER")
     respuesta=input("Ingrese que opcion quiere utilizar:")
-    if(respuesta==1):
+    if(respuesta=='1'):
         print(1)
-    elif(respuesta==2):
+    elif(respuesta=='2'):
         print(2)
-    elif(respuesta==3):
+    elif(respuesta=='3'):
         print(3)
-    elif(respuesta==4):
+    elif(respuesta=='4'):
         print(4)
-    elif(respuesta==5):
+    elif(respuesta=='5'):
         print(5)
-    elif(respuesta==6):
+    elif(respuesta=='6'):
         print(6)
     else:
         print("Opcion incorrecta")
