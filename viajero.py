@@ -197,4 +197,3 @@ def optimizarViaje(m):
     print(stairway_to_heaven.costo)
     print_list(stairway_to_heaven.lista)
     print("")
-optimizarViaje(generate_mendoza(5))
