@@ -41,7 +41,7 @@ def maximoComunDivisor(a,b):
         b=a-b
         a-=b
         a%=b
-        print(b)
+    print(b)
     return b
 primos=[2,3,5,7,11,13,17,19,23,29,31,37,41,43,47]
 def esPrimo(a):
@@ -205,7 +205,7 @@ while(True):
                 print(num,"es primo?(S/N):")
                 respuesta=input()
                 primo=esPrimo(num)
-                if(( primo and input=='S') or (not primo and input=='N')):
+                if(( primo and respuesta=='S') or (not primo and respuesta=='N')):
                     print("Estas despierto")
                     despierto=True
 
