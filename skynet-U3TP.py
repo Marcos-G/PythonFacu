@@ -154,9 +154,9 @@ mat=[[29, 27, 9, 4, 31],
 [85, 1, 88, 1, 17],
 [19, 1, 41, 1, 1],
 [1, 1, 83, 1, 1]]
-while(true):
+while(True):
     print("MENU PRINCIPAL")
-    print("1-TEST DE CONTRASEÑA")
+    print("1-TEST DE CONTRASENA")
     print("2-CONFIGURAR TOLERANCIA DE CONTRASEÑA")
     print("3-DESPERTADOR!!")
     print("4-OPTIMIZAR USO DE BATERIA")
