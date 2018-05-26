@@ -166,14 +166,14 @@ while(true):
     if(respuesta==1):
         print(1)
     elif(respuesta==2):
-
+        print(2)
     elif(respuesta==3):
-
+        print(3)
     elif(respuesta==4):
-
+        print(4)
     elif(respuesta==5):
-
+        print(5)
     elif(respuesta==6):
-
+        print(6)
     else:
         print("Opcion incorrecta")
