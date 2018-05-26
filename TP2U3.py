@@ -9,32 +9,22 @@ def quick_sort(A, p, f):
 def pasada(L,p,f):
     i=p-1
     r=int((p+f)/2)
-    print(L[r])
-    print(L[f])
-    L[r]+=L[f]
-    L[f]=L[r]-L[f]
-    L[r]-=L[f]
-    print(L[r])
-    print(L[f])
+    temp=L[f]
+    L[f]=L[r]
+    L[r]=temp
     for j in range(p,f):
         if(L[j]<=L[f]):
             i+=1
-            print(L[i])
-            print(L[j])
-            L[i]+=L[j]
-            L[j]=L[i]-L[j]
-            L[i]-=L[j]
-            print(L[i])
-            print(L[j])
-    L[i+1]+=L[f]
-    L[f]=L[i+1]-L[f]
-    L[i+1]-=L[f]
+            temp=L[i]
+            L[i]=L[j]
+            L[j]=temp
+    temp=L[i+1]
+    L[i+1]=L[f]
+    L[f]=temp
     return i+1
 numeros=[]
 for i in range(1,len(loteria[0])):
     for j in range(1,len(loteria)):
         numeros.append(loteria[j][i])
-print(numeros)
-
-pasada(numeros,0,len(numeros)-1)
+quick_sort(numeros,0,len(numeros)-1)
 print(numeros)
