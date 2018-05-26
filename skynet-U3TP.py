@@ -169,10 +169,10 @@ while(True):
         caracteres=int(input("Ingrese cantidad de caracteres posibles:"))
         milisPD=time()
         posibilidades=fuerzaBrutaPD(caracteres,longitud)
-        milisPD=time()-milisPD
+        milisPD=(time()-milisPD)*1000000
         milisDV=time()
         posibilidades=fuerzaBrutaDyV(caracteres,longitud)
-        milisDV=time()-milisDV
+        milisDV=(time()-milisDV)*1000000
         print("Un ataque por fuerza Bruta tendra exito en menos de",posibilidades*1.3,"segundos")
         print("Divide y venceras demoro",milisDV,"milisegundos mientras que Programacion dinamica demoro",milisPD,"milisegundos")
     elif(respuesta=='2'):
