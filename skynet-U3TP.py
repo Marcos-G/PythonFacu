@@ -176,7 +176,7 @@ while(True):
         print("Un ataque por fuerza Bruta tendra exito en menos de",posibilidades*1.3,"segundos")
         print("Divide y venceras demoro",milisDV,"microsegundos mientras que Programacion dinamica demoro",milisPD,"microsegundos")
     elif(respuesta=='2'):
-        contra=input("Ingrese contraseña:")
+        contra=input("Ingrese contrasena:")
         tolerancia=int(input("Ingrese tolerancia:"))
         valido=False
         while(not valido):
