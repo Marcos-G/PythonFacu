@@ -146,7 +146,7 @@ def t800(costos):
                 mini=i
         print("El T800-",n," destruira la ciudad ",mini)
         destruidas*=primos[mini]
-        print("pero es mas eficiente si se dan las siguientes combinaciones: 0-2, 1-3, 2-1, 3-4, 4-0")
+    print("pero es mas eficiente si se dan las siguientes combinaciones: 0-2, 1-3, 2-1, 3-4, 4-0")
 
 mat=[[29, 27, 9, 4, 31],
 [26, 7, 55, 1, 83],
