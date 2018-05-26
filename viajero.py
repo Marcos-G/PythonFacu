@@ -176,14 +176,14 @@ def generar_mat_preprocesada(M):
 		print(Mord[i])
 	return OP
 n=5
-M=generate_mendoza(n)
+M=generate_mendoza(n)#genero matriz de ejemplo
 maximo=100
 for i in range(n):#imprimo bonito la matriz
 	print(M[i])
-OP=generar_mat_preprocesada(M)
+OP=generar_mat_preprocesada(M)#reordeno la matriz para dinamizar la busqueda
 for i in range(n):#imprimo bonito la matriz
 	print(OP[i])
-P=generate_primos_array(n)
+P=generate_primos_array(n)#genero tantos primos como ciudades
 exito=2#variable global que uso en la funcion viajero
 for i in range(n):
     exito*=P[i]#multiplico todos los numeros primos que corresponden a cada ciudad para obtener el valor de exito, que me va a permitir saber que paso por todas o si pasó dos veces por una
