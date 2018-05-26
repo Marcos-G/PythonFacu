@@ -180,7 +180,7 @@ while(True):
         tolerancia=int(input("Ingrese tolerancia:"))
         valido=False
         while(not valido):
-            valido=distLevenshtein(contra,input("Ingrese contrasena:"))
+            valido=(distLevenshtein(contra,input("Ingrese contrasena:"))<tolerancia)
             if(not valido):
                 print("Incorrecto")
         print("Correcto")
