@@ -33,6 +33,7 @@ class App(QWidget):
         self.tableWidget = QTableWidget()
         self.tableWidget.setRowCount(4)
         self.tableWidget.setColumnCount(2)
+        '''
         self.tableWidget.setItem(0,0, QTableWidgetItem("0")
         self.tableWidget.setItem(0,1, QTableWidgetItem(0))
         self.tableWidget.setItem(1,0, QTableWidgetItem(0))
@@ -42,7 +43,7 @@ class App(QWidget):
         self.tableWidget.setItem(3,0, QTableWidgetItem(0))
         self.tableWidget.setItem(3,1, QTableWidgetItem(0))
         self.tableWidget.move(0,0)
-
+        '''
         # table selection change
         self.tableWidget.doubleClicked.connect(self.on_click)
 
