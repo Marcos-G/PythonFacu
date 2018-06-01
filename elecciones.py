@@ -33,7 +33,7 @@ class App(QWidget):
         self.tableWidget = QTableWidget()
         self.tableWidget.setRowCount(4)
         self.tableWidget.setColumnCount(2)
-        self.tableWidget.setItem(0,0, QTableWidgetItem("Cell (1,1)"))
+        self.tableWidget.setItem(0,0, QTableWidgetItem("Cell (1,1)").setFlags( QtCore.Qt.ItemIsSelectable | QtCore.Qt.ItemIsEditable | QtCore.Qt.ItemIsEnabled ))
         self.tableWidget.setItem(0,1, QTableWidgetItem("Cell (1,2)"))
         self.tableWidget.setItem(1,0, QTableWidgetItem("Cell (2,1)"))
         self.tableWidget.setItem(1,1, QTableWidgetItem("Cell (2,2)"))
