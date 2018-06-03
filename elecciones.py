@@ -8,22 +8,62 @@ Builder.load_string("""
     do_default_tab: False
 
     TabbedPanelItem:
-        text: 'first tab'
+        text: 'FAD'
         Label:
             text: 'First tab content area'
     TabbedPanelItem:
-        text: 'tab2'
+        text: 'FCA'
         BoxLayout:
             Label:
                 text: 'Second tab content area'
             Button:
                 text: 'Button that does nothing'
     TabbedPanelItem:
-        text: 'tab3'
+        text: 'FCAI'
         RstDocument:
             text:
                 '\\n'.join(("Hello world", "-----------",
                 "You are in the third tab."))
+    TabbedPanelItem:
+        text: 'FCE'
+        Label:
+            text: 'First tab content area'
+    TabbedPanelItem:
+        text: 'FCEN'
+        Label:
+            text: 'First tab content area'
+    TabbedPanelItem:
+        text: 'FCM'
+        Label:
+            text: 'First tab content area'
+    TabbedPanelItem:
+        text: 'FCPyS'
+        Label:
+            text: 'First tab content area'
+    TabbedPanelItem:
+        text: 'FD'
+        Label:
+            text: 'First tab content area'
+    TabbedPanelItem:
+        text: 'FE'
+        Label:
+            text: 'First tab content area'
+    TabbedPanelItem:
+        text: 'FFyL'
+        Label:
+            text: 'First tab content area'
+    TabbedPanelItem:
+        text: 'FI'
+        Label:
+            text: 'First tab content area'
+    TabbedPanelItem:
+        text: 'FO'
+        Label:
+            text: 'First tab content area'
+    TabbedPanelItem:
+        text: 'Rectorado'
+        Label:
+            text: 'First tab content area'
 
 """)
 
