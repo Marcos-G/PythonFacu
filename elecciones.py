@@ -4,7 +4,7 @@ from kivy.lang import Builder
 
 Builder.load_string("""
 
-<Test>:
+<Tabla>:
     do_default_tab: False
 
     TabbedPanelItem:
@@ -68,14 +68,14 @@ Builder.load_string("""
 """)
 
 
-class Test(TabbedPanel):
+class Tabla(VentanaTabla):
     pass
 
 
-class TabbedPanelApp(App):
+class VentanaTablaApp(App):
     def build(self):
-        return Test()
+        return Tabla()
 
 
 if __name__ == '__main__':
-    TabbedPanelApp().run()
+    VentanaTablaApp().run()
