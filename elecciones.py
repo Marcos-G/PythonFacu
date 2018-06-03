@@ -68,7 +68,7 @@ Builder.load_string("""
 """)
 
 
-class Tabla(VentanaTabla):
+class Tabla(TabbedPanel):
     pass
 
 
