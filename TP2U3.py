@@ -29,8 +29,20 @@ for i in range(1,len(loteria[0])):
 quick_sort(numeros,0,len(numeros)-1)
 masRepetidos=[0,0,0,0,0,0]
 repeticiones=[0,0,0,0,0,0]
-prev=0
+prev=numeros[0]
 rep=0
 for n in numeros:
     if(n!=prev):
-        if(rep>=)
+        i=0
+        while(rep<repeticiones[i]):
+            i++
+        masRepetidos.insert(i,prev)
+        masRepetidos.pop()
+        repeticiones.insert(i,rep)
+        repeticiones.pop()
+        rep=0
+
+    prev=n
+    rep+=1
+print(masRepetidos)
+print(repeticiones)
