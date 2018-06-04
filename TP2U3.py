@@ -31,6 +31,7 @@ masRepetidos=[0,0,0,0,0,0]
 repeticiones=[0,0,0,0,0,0]
 prev=numeros[0]
 rep=0
+print(numeros)
 for n in numeros:
     if(n!=prev):
         i=0
