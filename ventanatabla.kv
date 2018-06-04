@@ -182,62 +182,50 @@
     TextInput:
         text: '0'
         multiline:False
+<SelectorClaustro@TabbedPanelItem>:
+    TabbedPanel:
+        do_default_tab:False
+        TabbedPanelItem:
+            text:'Profesores'
+            Tabla
+        TabbedPanelItem:
+            text:'Aux.Doc.'
+            Tabla
+        TabbedPanelItem:
+            text:'Estudiantes'
+            Tabla
+        TabbedPanelItem:
+            text:'Egresados'
+            Tabla
+        TabbedPanelItem:
+            text:'P.A.A.'
+            Tabla
 <SelectorFacultades>:
     do_default_tab: False
 
-    TabbedPanelItem:
+    SelectorClaustro:
         text: 'FAD'
-        Tabla
-    TabbedPanelItem:
+    SelectorClaustro:
         text: 'FCA'
-        BoxLayout:
-            Label:
-                text: 'Second tab content area'
-            Button:
-                text: 'Button that does nothing'
-    TabbedPanelItem:
+    SelectorClaustro:
         text: 'FCAI'
-        RstDocument:
-            text:
-                '\\n'.join(("Hello world", "-----------",
-                "You are in the third tab."))
-    TabbedPanelItem:
+    SelectorClaustro:
         text: 'FCE'
-        Label:
-            text: 'First tab content area'
-    TabbedPanelItem:
+    SelectorClaustro:
         text: 'FCEN'
-        Label:
-            text: 'First tab content area'
-    TabbedPanelItem:
+    SelectorClaustro:
         text: 'FCM'
-        Label:
-            text: 'First tab content area'
-    TabbedPanelItem:
+    SelectorClaustro:
         text: 'FCPyS'
-        Label:
-            text: 'First tab content area'
-    TabbedPanelItem:
+    SelectorClaustro:
         text: 'FD'
-        Label:
-            text: 'First tab content area'
-    TabbedPanelItem:
+    SelectorClaustro:
         text: 'FE'
-        Label:
-            text: 'First tab content area'
-    TabbedPanelItem:
+    SelectorClaustro:
         text: 'FFyL'
-        Label:
-            text: 'First tab content area'
-    TabbedPanelItem:
+    SelectorClaustro:
         text: 'FI'
-        Label:
-            text: 'First tab content area'
-    TabbedPanelItem:
+    SelectorClaustro:
         text: 'FO'
-        Label:
-            text: 'First tab content area'
-    TabbedPanelItem:
+    SelectorClaustro:
         text: 'Rectorado'
-        Label:
-            text: 'First tab content area'
