@@ -3,8 +3,6 @@ from kivy.uix.tabbedpanel import TabbedPanel
 
 class SelectorFacultades(TabbedPanel):
     pass
-class Tabla(GridLayout):
-    pass
 
 class VentanaTablaApp(App):
     def build(self):
