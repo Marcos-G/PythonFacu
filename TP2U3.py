@@ -34,8 +34,8 @@ rep=0
 for n in numeros:
     if(n!=prev):
         i=0
-        while(rep<repeticiones[i]):
-            i++
+        while(rep<repeticiones[i] and i<6):
+            i+=1
         masRepetidos.insert(i,prev)
         masRepetidos.pop()
         repeticiones.insert(i,rep)
