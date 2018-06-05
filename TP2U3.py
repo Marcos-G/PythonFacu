@@ -100,11 +100,15 @@ print("b)Se podría haber implementado sin haber ordenado los valores, quedando 
 numerosTony=[123,214,345,346,234,4567,435,356,325,56,235,657,234,34577,457623]
 avengers=["viuda negra","caballero negro","she-hulk","bestia","starfox","madame máscara","hulk","visión","ms. marvel","bruja escarlata","torunn","sentry","moonstone","avispa","phil coulson","quicksilver","kate bishop","luke cage","ex nihilo","ojo de halcón","gata infernal","crystal","máquina de guerra","henry peter gyrich","rick jones","wolverine","t'chaka","edwin jarvis","capitán marvel","namor","silverclaw","spider-man","white tiger","carol danvers","viper","espadachín","thor","zabu","iron man","defensor","nick fury","pantera negra","falcon","mantis","monica rambeau","henry pym","capitán britania","hércules","gravitón","sharon carter","venom","wiccan","ant-man","capitán américa","hombre hormiga","hombre maravilla","pepper potts","maria hill"]
 radixSort(numerosTony)
+print()
+print()
 print("J.A.R.V.I.S. Aleccionario")
 print("Al ordenar como Jarvis queda:",numerosTony)
 radixSortAlverre(numerosTony)
 print("Al ordenar como Tony queda:",numerosTony)
 print("La complejidad es igual a la cantidad de digitos del numero mayor por la complejidad de el algoritmo de ordenamiento utilizado, en este caso la complejidad en base a la cantidad de variables es O(n²), porque utiizé bubble sort")
+print()
+print()
 print("Mad Fury")
 print("La lista ordenada de los Avengers es:")
 radixSortPalabras(avengers)
