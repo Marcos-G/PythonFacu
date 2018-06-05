@@ -31,13 +31,14 @@ def radixSortPalabras(L):
             max=len(pal)
     for pal in L:
         while(len(pal)<max):
-            pal+=","
-        print(pal)
+            pal+=" "
+
     for p in range(max-1,-1,-1):
         falta=True
         while(falta):
             falta=False
             for e in range(len(L)-1):
+                print(e)
                 if(dicc[L[e][p]]>dicc[L[e+1][p]]):
                     temp=L[e+1]
                     L[e+1]=L[e]
