@@ -15,7 +15,7 @@ def radixSort(L):
                     print(e)
                     temp=L[e+1]
                     L[e+1]=L[e]
-                    L[e]=L[e+1]
+                    L[e]=temp
                     falta=True
 
 def pasada(L,p,f):
