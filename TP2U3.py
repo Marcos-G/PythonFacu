@@ -29,12 +29,15 @@ def radixSortPalabras(L):
     for pal in L:
         if(len(pal)>max):
             max=len(pal)
+    for pal in L:
+        while(len(pal)<max):
+            pal.append(" ")
     for p in range(max-1,-1,-1):
         falta=True
         while(falta):
             falta=False
             for e in range(len(L)-1):
-                if((len(L[e])<=p and not(len(L[e+1])<=p)) or dicc[L[e][p]]>dicc[L[e+1][p]]):
+                if(dicc[L[e][p]]>dicc[L[e+1][p]]):
                     temp=L[e+1]
                     L[e+1]=L[e]
                     L[e]=temp
