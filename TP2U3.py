@@ -21,7 +21,7 @@ def radixSort(L):
                     L[e]=temp
                     falta=True
 def radixSortPalabras(L):
-    chars = [" ",",",".","'","-","a","á","b","c","d","e","é","f","g","h","i","í","j","k","l","m","n","o","ó"","p","q","r","s","t","u","ú","v","w","x","y","z"]
+    chars = [" ",",",".","'","-","a","á","b","c","d","e","é","f","g","h","i","í","j","k","l","m","n","o","ó","p","q","r","s","t","u","ú","v","w","x","y","z"]
     dicc={}
     for i in range(len(chars)):
         dicc[chars[i]]=i
