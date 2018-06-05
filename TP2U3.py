@@ -12,7 +12,6 @@ def radixSort(L):
             falta=False
             for e in range(len(L)-1):
                 if((L[e]%(10**p))//(10**(p-1))>(L[e+1]%(10**p))//(10**(p-1))):
-                    print(e)
                     temp=L[e+1]
                     L[e+1]=L[e]
                     L[e]=temp
@@ -24,7 +23,6 @@ def radixSortAlverre(L):
             falta=False
             for e in range(len(L)-1):
                 if((L[e]%(10**p))//(10**(p-1))>(L[e+1]%(10**p))//(10**(p-1))):
-                    print(e)
                     temp=L[e+1]
                     L[e+1]=L[e]
                     L[e]=temp
