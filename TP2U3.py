@@ -97,10 +97,12 @@ print("Los numeros que mas salieron fueron:")
 print(masRepetidos)
 print("Se podría haber implementado sin haber ordenado los valores, quedando en una complejidad de n")
 numerosTony=[123,214,345,346,234,4567,435,356,325,56,235,657,234,34577,457623]
-Advengers=["viuda negra","caballero negro","she-hulk","bestia","starfox","madame máscara","hulk","visión","ms. marvel","bruja escarlata","torunn","sentry","moonstone","avispa","phil coulson","quicksilver","kate bishop","luke cage","ex nihilo","ojo de halcón","gata infernal","crystal","máquina de guerra","henry peter gyrich","rick jones","wolverine","t´chaka","edwin jarvis","capitán marvel","namor","silverclaw","spider-man","white tiger","carol danvers","viper","espadachín","thor","zabu","iron man","defensor","nick fury","pantera negra","falcon","mantis","monica rambeau","henry pym","capitán britania","hércules","gravitón","sharon carter","venom","wiccan","ant-man","capitán américa","hombre hormiga","hombre maravilla","pepper potts","maria hill"]
+avengers=["viuda negra","caballero negro","she-hulk","bestia","starfox","madame máscara","hulk","visión","ms. marvel","bruja escarlata","torunn","sentry","moonstone","avispa","phil coulson","quicksilver","kate bishop","luke cage","ex nihilo","ojo de halcón","gata infernal","crystal","máquina de guerra","henry peter gyrich","rick jones","wolverine","t´chaka","edwin jarvis","capitán marvel","namor","silverclaw","spider-man","white tiger","carol danvers","viper","espadachín","thor","zabu","iron man","defensor","nick fury","pantera negra","falcon","mantis","monica rambeau","henry pym","capitán britania","hércules","gravitón","sharon carter","venom","wiccan","ant-man","capitán américa","hombre hormiga","hombre maravilla","pepper potts","maria hill"]
 radixSort(numerosTony)
 print("Al ordenar como Jarvis queda:",numerosTony)
 radixSortAlverre(numerosTony)
 print("Al ordenar como Tony queda:",numerosTony)
-radixSortPalabras(Advengers)
-print(Advengers)
+print("La lista ordenada de los Avengers es:")
+radixSortPalabras(avengers)
+for av in avengers:
+    print(av)
