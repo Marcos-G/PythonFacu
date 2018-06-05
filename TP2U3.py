@@ -31,7 +31,7 @@ def radixSortPalabras(L):
             max=len(pal)
     for pal in L:
         while(len(pal)<max):
-            pal+=" "
+            pal+=","
     for p in range(max-1,-1,-1):
         falta=True
         while(falta):
