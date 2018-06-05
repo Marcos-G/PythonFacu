@@ -38,7 +38,7 @@ def radixSortPalabras(L):
         while(falta):
             falta=False
             for e in range(len(L)-1):
-                print(L[e])
+                print(L[e][p])
                 if(dicc[L[e][p]]>dicc[L[e+1][p]]):
                     temp=L[e+1]
                     L[e+1]=L[e]
