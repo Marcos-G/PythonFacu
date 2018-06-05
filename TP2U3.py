@@ -6,7 +6,7 @@ def quick_sort(A, p, f):
         quick_sort(A, p, q - 1)
         quick_sort(A, q + 1, f)
 def radixSort(L):
-    for p in range(1,5):
+    for p in range(1,10):
         falta=True
         while(falta):
             falta=False
