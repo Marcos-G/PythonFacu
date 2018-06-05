@@ -17,7 +17,18 @@ def radixSort(L):
                     L[e+1]=L[e]
                     L[e]=temp
                     falta=True
-
+def radixSortAlverre(L):
+    for p in range(11,0,-1):
+        falta=True
+        while(falta):
+            falta=False
+            for e in range(len(L)-1):
+                if((L[e]%(10**p))//(10**(p-1))>(L[e+1]%(10**p))//(10**(p-1))):
+                    print(e)
+                    temp=L[e+1]
+                    L[e+1]=L[e]
+                    L[e]=temp
+                    falta=True
 def pasada(L,p,f):
     i=p-1
     r=int((p+f)/2)
@@ -62,4 +73,6 @@ print(masRepetidos)
 print("Se podria haber implementado sin haber ordenado los valores, quedando en una complejidad de n")
 numerosTony=[123,214,345,346,234,4567,435,356,325,56,235,657,234,34577,457623]
 radixSort(numerosTony)
-print(numerosTony)
+print("Al ordenar como Jarvis queda:",numerosTony)
+radixSortAlverre(numerosTony)
+print("Al ordenar como Tony queda:",numerosTony)
