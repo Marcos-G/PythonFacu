@@ -58,7 +58,7 @@ for n in numeros:
     rep+=1
 print("Los numeros que mas salieron fueron:")
 print(masRepetidos)
-print("Se podría haber implementado sin haber ordenado los valores, quedando en una complejidad de n")
+print("Se podria haber implementado sin haber ordenado los valores, quedando en una complejidad de n")
 numerosTony=[123,214,345,346,234,4567,435,356,325,56,235,657,234,34577,457623]
 radixSort(numerosTony)
 print(numerosTony)
