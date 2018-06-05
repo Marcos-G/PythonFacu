@@ -5,6 +5,17 @@ def quick_sort(A, p, f):
         q = pasada(A, p, f)
         quick_sort(A, p, q - 1)
         quick_sort(A, q + 1, f)
+def radixSort(L):
+    for p in range(1,10):
+        falta=True
+        while(falta):
+            falta=False
+            for e in range(len(L)-1):
+                if((L[e]%(10**p))//(10**(p-1))<(L[e+1]%(10**p))//(10**(p-1))):
+                    L[e]+=L[e+1]
+                    L[e+1]-=L[e]
+                    L[e]-=L[e+1]
+                    falta=True
 
 def pasada(L,p,f):
     i=p-1
@@ -45,5 +56,9 @@ for n in numeros:
 
     prev=n
     rep+=1
+print("Los numeros que mas salieron fueron:")
 print(masRepetidos)
-print(repeticiones)
+print("Se podría haber implementado sin haber ordenado los valores, quedando en una complejidad de n")
+numerosTony=[123,214,345,346,234,4567,435,356,325,56,235,657,234,34577,457623]
+radixSort(numerosTony)
+print(numerosTony)
