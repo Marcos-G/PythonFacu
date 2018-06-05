@@ -11,8 +11,8 @@ def radixSort(L):
         while(falta):
             falta=False
             for e in range(len(L)-1):
-                print(e)
                 if((L[e]%(10**p))//(10**(p-1))<(L[e+1]%(10**p))//(10**(p-1))):
+                    print(e)
                     L[e]+=L[e+1]
                     L[e+1]-=L[e]
                     L[e]-=L[e+1]
