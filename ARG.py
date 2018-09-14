@@ -9,7 +9,7 @@ m=0
 while(n>0):
     c=1
     for i in range(m):
-        c*=n-(m+1)
+        c*=(n-(i+1))
     acu+=c
     m+=1
     n-=2
