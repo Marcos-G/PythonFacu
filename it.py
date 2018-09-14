@@ -13,7 +13,7 @@ for i in range(234612846789231):
         once=False
   inp=outp
   c+=outp.count('alpaca')
-  print(i/234612846789231.0)
+  print(i)
   print(c)
 print(c)
 """110101010110000100001111011001001000001001101111
