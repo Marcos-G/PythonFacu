@@ -10,7 +10,7 @@ b=True
         c=c%123456789
     print(i/234612846789231.0)
 print(c)'''
-s=1
+s=0
 for i in range(1,10):#1909991):
     s*=2
     if(b):
