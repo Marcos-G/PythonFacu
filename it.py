@@ -1,6 +1,7 @@
 gram={'a':"al",'l':"paca",'p':"cp",'c':"pc"}
 gramaticas={0:gram}
 inp="a"
+inp2=""
 for i in range(10):
   arr=list(inp)
   outp=""
