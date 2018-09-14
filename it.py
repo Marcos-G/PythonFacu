@@ -3,14 +3,13 @@ gramaticas={0:gram}
 inp="a"
 c=0
 s=True
-for i in range(10):
+for i in range(234612846789231):
     c*=2
     if(s):
         c+=1
     else:
         c-=1
     s=not s
-    print(c)
 print(c)
 """110101010110000100001111011001001000001001101111
 234612846789231
