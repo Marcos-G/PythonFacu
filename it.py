@@ -8,9 +8,9 @@ for i in range(234612846789231):
   once=True
   for a in range(len(arr)):
     outp+=gram[arr[a]]
-    if(once and outp==inp):
+    '''if(once and outp==inp):
         outp=""
-        once=False
+        once=False'''
   inp=outp
   c+=outp.count('alpaca')
   print(i)
