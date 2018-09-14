@@ -1,7 +1,7 @@
 gram={'a':"al",'l':"paca",'p':"cp",'c':"pc"}
 gramaticas={0:gram}
 inp="a"
-c=0
+c=1
 for i in range(234612846789231):
   arr=list(inp)
   outp=""
