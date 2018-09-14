@@ -41,4 +41,4 @@ def get_tag_value():
 
 
 get_tag_value()
-input()
+cosa=input()
