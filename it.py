@@ -2,7 +2,7 @@ gram={'a':"al",'l':"paca",'p':"cp",'c':"pc"}
 gramaticas={0:gram}
 inp="a"
 c=1
-for i in range(234612846789231):
+for i in range(20):
   arr=list(inp)
   outp=""
   once=True
@@ -14,7 +14,7 @@ for i in range(234612846789231):
   inp=outp
   c+=outp.count('alpaca')
   print(i)
-  print(c)
+  print(outp)
 print(c)
 """110101010110000100001111011001001000001001101111
 234612846789231
