@@ -4,7 +4,7 @@ inp="a"
 c=0
 b=True
 for i in range(20):
-    print((2**n)%123456789)
+    print((2**i)%123456789)
 '''for i in range(0,234612846789231,2):
     c*=4
     c+=1
