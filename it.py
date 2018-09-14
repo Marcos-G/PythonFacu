@@ -2,7 +2,7 @@ gram={'a':"al",'l':"paca",'p':"cp",'c':"pc"}
 gramaticas={0:gram}
 inp="a"
 c=0
-b=False
+b=True
 '''for i in range(0,234612846789231,2):
     c*=4
     c+=1
