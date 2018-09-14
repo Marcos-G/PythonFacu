@@ -1,12 +1,15 @@
 gram={'a':"al",'l':"paca",'p':"cp",'c':"pc"}
 gramaticas={0:gram}
 inp="a"
-inp2=""
 for i in range(10):
   arr=list(inp)
   outp=""
+  once=True
   for a in range(len(arr)):
     outp+=gram[arr[a]]
+    if(once and outp==inp):
+        outp=""
+        once=False
   inp=outp
   print(outp)
   print(outp.count('alpaca'))
