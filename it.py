@@ -3,7 +3,7 @@ gramaticas={0:gram}
 inp="a"
 c=0
 s=True
-for i in range(0,2,234612846789231):
+for i in range(0,234612846789231,2):
     c*=4
     c+=1
     if(c>123456789):
