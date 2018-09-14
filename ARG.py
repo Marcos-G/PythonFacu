@@ -10,6 +10,7 @@ while(n>0):
     c=1
     for i in range(m):
         c*=(n-(i))
+    print(c)
     acu+=c
     m+=1
     n-=2
