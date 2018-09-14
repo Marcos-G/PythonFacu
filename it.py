@@ -2,7 +2,7 @@ gram={'a':"al",'l':"paca",'p':"cp",'c':"pc"}
 gramaticas={0:gram}
 inp="a"
 c=0
-s=False
+b=False
 '''for i in range(0,234612846789231,2):
     c*=4
     c+=1
@@ -13,11 +13,11 @@ print(c)'''
 s=1
 for i in range(1,10):#1909991):
     s*=2
-    if(s):
+    if(b):
         s+=1
     else:
         s-=1
-    s=not s
+    b=not b
     print(i," ",s)
 
 """110101010110000100001111011001001000001001101111
