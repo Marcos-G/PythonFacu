@@ -3,7 +3,7 @@ gramaticas={0:gram}
 inp="a"
 c=0
 b=True
-for i in range(100):
+for i in range(400):
     print((2**i)%123456789)
 '''for i in range(0,234612846789231,2):
     c*=4
