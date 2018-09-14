@@ -3,13 +3,9 @@ gramaticas={0:gram}
 inp="a"
 c=0
 s=True
-for i in range(234612846789231):
-    c*=2
-    if(s):
-        c+=1
-    else:
-        c-=1
-    s=not s
+for i in range(0,2,234612846789231):
+    c*=4
+    c+=1
     if(c>123456789):
         c=c%123456789
     print(i/234612846789231.0)
