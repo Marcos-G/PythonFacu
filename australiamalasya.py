@@ -12,6 +12,10 @@ def get_tag_value():
             prev_tag_name_list.pop(-1)
         else:
             curr_line = curr_line.replace('<','').replace('>', '')
+            taglist=True
+            if '/' in curr_line:
+                curr_line.replace('/','')
+                taglist=False
             curr_tag_name = curr_line.split()[0]
             value_list = curr_line.replace(curr_tag_name, '').split()
             prev_tag = '.'.join(prev_tag_name_list)
@@ -24,6 +28,7 @@ def get_tag_value():
                     dict_tag_value['%s~%s' %(temp_tag, tag_name)] = tag_val
                 else:
                     dict_tag_value['%s~%s' %(curr_tag_name, tag_name)] = tag_val
+            if taglist:
             prev_tag_name_list.append(curr_tag_name)
 
     for count in range(int(num_query)):
