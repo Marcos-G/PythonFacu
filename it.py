@@ -11,7 +11,7 @@ b=True
     print(i/234612846789231.0)
 print(c)'''
 s=0
-for i in range(1,10):#1909991):
+for i in range(1,1909991):
     s*=2
     if(b):
         s+=1
