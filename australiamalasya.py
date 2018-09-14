@@ -29,7 +29,7 @@ def get_tag_value():
                 else:
                     dict_tag_value['%s~%s' %(curr_tag_name, tag_name)] = tag_val
             if taglist:
-            prev_tag_name_list.append(curr_tag_name)
+                prev_tag_name_list.append(curr_tag_name)
 
     for count in range(int(num_query)):
         entry = input()
