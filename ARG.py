@@ -7,7 +7,11 @@ acu=0
 n=32
 m=0
 while(n>0):
-  acu+=(factorial(n)/factorial(n-m))
-  m+=1
-  n-=2
+    c=1
+    for i in range(m):
+        c*=n-(m+1)
+    acu+=c
+    m+=1
+    n-=2
+    print(acu)
 print(acu*factorial(32))
