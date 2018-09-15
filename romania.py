@@ -2,6 +2,7 @@ def extended_gcd(a, b):
     """Returns pair (x, y) such that xa + yb = gcd(a, b)"""
     x, lastx, y, lasty = 0, 1, 1, 0
     while b != 0:
+        print("demora")
         q, r = divmod(a, b)
         a, b = b, r
         x, lastx = lastx - q * x, x
