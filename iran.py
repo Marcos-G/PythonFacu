@@ -1,7 +1,6 @@
 from scipy import misc
-from PIL import Image
+from PIL import Image,ImageChops
 import numpy as np
-import ImageChops
 
 inp = misc.imread('test.png')
 pokenumbers={}
