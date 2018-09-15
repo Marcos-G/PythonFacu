@@ -27,7 +27,6 @@ def main():
     print( "n:  " + str(d) );
 
     # Decrypt ciphertext
-    pt = pow(ct, d, n)
     print( "pt: " + str(pt) )
 
 if __name__ == "__main__":
