@@ -11,3 +11,4 @@ for i in range(20):
             if(cadena.count(minima)==1):
                 termino=True
 print(cadena.find(minima))
+print(len(cadena))
