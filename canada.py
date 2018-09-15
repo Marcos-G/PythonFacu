@@ -42,7 +42,7 @@ for i in range(1):
                 break
             for k in range(j,20):
                 if(j==0 and i==0):
-                    if(bon(getColor(outp,1,o,k)):
+                    if(bon(getColor(outp,1,o,k))):
                         moverPieza(outp,o,k,0,0)
                         romper=True
                         break
