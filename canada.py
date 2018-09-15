@@ -34,6 +34,7 @@ for i in range(1):
             if romper:
                 break
             for k in range(j,20):
+                print(i,j)
                 if(j==0 and i==0):
                     if(bon(getColor(outp,1,o,k)) and bon(getColor(outp,2,o,k)) and bon(getColor(outp,4,o,k))):
                         moverPieza(outp,o,k,i,j)
