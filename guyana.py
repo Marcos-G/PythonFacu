@@ -1,8 +1,11 @@
-binary_file =open("secreto.pdf", "rb")
+binary_file =open("data", "rb")
     # Read the whole file at once
 data = binary_file.read()
-data=bytearray(data)
+print(data)
+print(int(data))
+'''data=bytearray(data)
 for i in range(len(data)):
     data[i]=data[i]^137
 binary_file =open("secreto.pdf", "wb")
 num_bytes_written = binary_file.write(data)
+'''
