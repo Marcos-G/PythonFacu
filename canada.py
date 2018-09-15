@@ -14,4 +14,5 @@ temp=outp[0:5,0:5]
 img = Image.fromarray(temp, 'RGB')
 img.save('my1.png')
 def moverPieza(i1,j1,i2,j2):
-    temp=outp[i1*5:i1*5+4,ij1*5:ij1*5+4]
+    temp=outp[i1*5:i1*5+5,j1*5:j1*5+5]
+    outp[i1*5:i1*5+5,j1*5:j1*5+5]=outp[i2*5:i2*5+5,j2*5:j2*5+5]
