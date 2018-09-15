@@ -56,12 +56,12 @@ for a in range(1):
     for i in range(1,20):
         for j in range(20):
             cortar=False
-            for o in range(i,20):
+            for o in range(20):
                 if(cortar):
                     break
                 for k in range(20):
                     if(j==0):
-                        if(bon(getColor(outp,4,o,k)) and bon(getColor(outp,1,o,k)) and np.array_equal(getColor(outp,2,o,k),getColor(outp,3,i-1,j))):
+                        if(bon(getColor(outp,4,o,k)) and bon(getColor(outp,1,o,k)) and np.array_equal(getColor(outp,2,o,k),getColor(outp,3,i-1,j)) and not bon(getColor(outp,3,ok))):
                             moverPieza(outp,o,k,i,j)
                             cortar=True
                             break
