@@ -17,7 +17,7 @@ check=0
 for i in range(len(supern)):
     if(supern[i]=='1'):
         check+=2**(i)
-        print("an+"+str(2**(i))+"=an*"+str(2**(2*i))+"+"+str(J[i]))
+        print("an+"+str(2**(i))+"=an*"+str(2**(2*i))+"+"+str(J[i*2]))
         acu=(acu*(2**(i))+J[i+1])%123456789
         print(acu)
 print(acu)
