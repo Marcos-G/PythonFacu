@@ -40,7 +40,7 @@ for i in range(20):
                         moverPieza(outp,o,k,i,j)
 
                 else:
-                    if(np.array_equal(getColor(outp,2,o,k),getColor(outp,3,i-1,j)) or np.array_equal(getColor(outp,1,o,k),getColor(outp,4,i-1,j)) or np.array_equal(getColor(outp,1,o,k),getColor(outp,2,i,j-1)) or np.array_equal(getColor(outp,4,o,k),getColor(outp,3,i,j-1))):
+                    if((np.array_equal(getColor(outp,2,o,k),getColor(outp,3,i-1,j)) and np.array_equal(getColor(outp,1,o,k),getColor(outp,4,i-1,j))) or (np.array_equal(getColor(outp,1,o,k),getColor(outp,2,i,j-1)) and np.array_equal(getColor(outp,4,o,k),getColor(outp,3,i,j-1)))):
                         moverPieza(outp,o,k,i,j)
 
 
