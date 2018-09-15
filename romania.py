@@ -48,6 +48,6 @@ def power(x, m, n):
         x = (x * x) % n
         m //= 2
     return a
-msg="<UËA9 |u2dJ<e¢sDaž¬ù§Zú"
+msg=3411360786
 (n,e,d)=rsa_generate_key()
-print(n,d)
+print(rsa_decrypt(msg,n,d))
