@@ -1,3 +1,3 @@
-from scipy import misc
-arr = misc.imread('rompecabezas.png')
+from scipy import misc.imread
+arr = imread('rompecabezas.png')
 print(arr[0,0])
