@@ -4,6 +4,7 @@ import numpy as np
 
 
 inp = misc.imread('test.png')
+inp=np.asarray(inp)
 pokenumbers={}
 resultado=""
 print(len(inp))
