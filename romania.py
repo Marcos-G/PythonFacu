@@ -35,11 +35,20 @@ def rsa_generate_key():
 
 
 def rsa_encrypt(message, n, e):
-    return modular.power(message, e, n)
+    return power(message, e, n)
 
 
 def rsa_decrypt(cipher, n, d):
-    return modular.power(cipher, d, n)
+    return power(cipher, d, n)
+def power(x, m, n):
+    """Calculate x^m modulo n using O(log(m)) operations."""
+    a = 1
+    while m > 0:
+        if m % 2 == 1:
+            a = (a * x) % n
+        x = (x * x) % n
+        m //= 2
+    return a
 msg="<UËA9 |u2dJ<e¢sDaž¬ù§Zú"
 (n,e,d)=rsa_generate_key()
 print(rsa_decrypt(msg,n,d))
