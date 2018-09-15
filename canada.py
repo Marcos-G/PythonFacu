@@ -40,7 +40,7 @@ for i in range(1):
                         romper=True
                         break
                 elif(i==0):
-                    if(bon(getColor(outp,1,o,k)) and bon(getColor(outp,2,o,k)) and np.array_equal(getColor(outp,4,o,k),getColor(outp,3,i,j-1))):
+                    if(bon(getColor(outp,1,o,k)) and bon(getColor(outp,2,o,k)) ):#and np.array_equal(getColor(outp,4,o,k),getColor(outp,3,i,j-1))):
                         moverPieza(outp,o,k,i,j)
                         romper=True
                         break
