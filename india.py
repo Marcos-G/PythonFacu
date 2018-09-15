@@ -4,5 +4,5 @@ print(len(cadena))
 for i in range(len(cadena)):
     for j in range(i,len(cadena)+1):
         print(i/len(cadena),len(ss))
-        ss.add(cadena[i:j])
+        ss.add(hash(cadena[i:j])
 print(len(ss))
