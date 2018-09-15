@@ -28,9 +28,28 @@ outp=np.asarray(outp)
 img = Image.fromarray(outp, 'RGB')
 img.save('my.png')
 moverPieza(outp,18,1,0,0)
-for a in range(1):
+moverPieza(outp,0,16,0,1)
+moverPieza(outp,1,4,0,2)
+moverPieza(outp,1,9,0,3)
+moverPieza(outp,2,8,0,4)
+moverPieza(outp,3,0,0,5)
+moverPieza(outp,4,7,0,6)
+moverPieza(outp,5,3,0,7)
+moverPieza(outp,7,17,0,8)
+moverPieza(outp,8,8,0,9)
+moverPieza(outp,10,1,0,10)
+moverPieza(outp,11,11,0,11)
+moverPieza(outp,12,16,0,12)
+moverPieza(outp,13,6,0,13)
+moverPieza(outp,15,5,0,14)
+moverPieza(outp,16,5,0,15)
+moverPieza(outp,17,4,0,16)
+moverPieza(outp,17,12,0,17)
+moverPieza(outp,18,1,0,18)
+moverPieza(outp,18,10,0,19)
+'''for a in range(1):
     for i in range(1):
-        for j in range(1,2):
+        for j in range(1,20):
             for o in range(i,20):
                 for k in range(j,20):
                     if(i==0):
@@ -48,6 +67,6 @@ for a in range(1):
 
 
 
-
+'''
 img = Image.fromarray(outp, 'RGB')
 img.save('my1.png')
