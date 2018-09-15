@@ -30,12 +30,13 @@ img.save('my.png')
 #moverPieza(outp,7,17,0,19)
 for i in range(20):
     for j in range(20):
-        print(i,j)
+
         romper=False
-        for o in range(i,20):
+        for o in range(20):
             if romper:
                 break
-            for k in range(j,20):
+            for k in range(20):
+                print(i,j)
                 if(i==0 and j==0):
                     romper=True
                     break
