@@ -92,6 +92,16 @@ for a in range(1):
                         elif(i==19 and j==19):
                                 cortar=True
                                 break
+                        elif(i==19):
+                                if(np.array_equal(getColor(outp,2,o,k),getColor(outp,3,i-1,j)) and np.array_equal(getColor(outp,1,o,k),getColor(outp,3,i-1,j-1))and np.array_equal(getColor(outp,1,o,k),getColor(outp,4,i-1,j))and np.array_equal(getColor(outp,1,o,k),getColor(outp,2,i,j-1)) and np.array_equal(getColor(outp,2,o,k),getColor(outp,3,i-1,j))):
+                                    moverPieza(outp,o,k,i,j)
+                                    cortar=True
+                                    break
+                        elif(j==19):
+                                if(np.array_equal(getColor(outp,4,o,k),getColor(outp,3,i,j-1)) and np.array_equal(getColor(outp,1,o,k),getColor(outp,3,i-1,j-1))and np.array_equal(getColor(outp,1,o,k),getColor(outp,4,i-1,j))and np.array_equal(getColor(outp,1,o,k),getColor(outp,2,i,j-1)) and np.array_equal(getColor(outp,2,o,k),getColor(outp,3,i-1,j))):
+                                    moverPieza(outp,o,k,i,j)
+                                    cortar=True
+                                    break
                         else:
                             #print(np.array_equal(getColor(outp,2,o,k),getColor(outp,3,i-1,j)) , np.array_equal(getColor(outp,4,o,k),getColor(outp,3,i,j-1)) , np.array_equal(getColor(outp,1,o,k),getColor(outp,3,i-1,j-1)), np.array_equal(getColor(outp,1,o,k),getColor(outp,4,i-1,j)), np.array_equal(getColor(outp,1,o,k),getColor(outp,2,i,j-1)) , np.array_equal(getColor(outp,2,o,k),getColor(outp,3,i-1,j)))
                             if(np.array_equal(getColor(outp,2,o,k),getColor(outp,3,i-1,j)) and np.array_equal(getColor(outp,4,o,k),getColor(outp,3,i,j-1)) and np.array_equal(getColor(outp,1,o,k),getColor(outp,3,i-1,j-1))and np.array_equal(getColor(outp,1,o,k),getColor(outp,4,i-1,j))and np.array_equal(getColor(outp,1,o,k),getColor(outp,2,i,j-1)) and np.array_equal(getColor(outp,2,o,k),getColor(outp,3,i-1,j))):
