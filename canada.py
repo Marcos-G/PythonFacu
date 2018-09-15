@@ -1,3 +1,3 @@
-from scipy import imageio
-arr = imageio.imread('rompecabezas.png')
-print(arr[0,0])
+from scipy import misc
+arr = misc.imread('rompecabezas.png')
+print(arr[30,30])
