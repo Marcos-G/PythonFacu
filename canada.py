@@ -79,7 +79,7 @@ for a in range(1):
                                 cortar=True
                                 break
                         else:
-                            print(np.array_equal(getColor(outp,2,o,k),getColor(outp,3,i-1,j)) , np.array_equal(getColor(outp,4,o,k),getColor(outp,3,i,j-1)) , np.array_equal(getColor(outp,1,o,k),getColor(outp,3,i-1,j-1)), np.array_equal(getColor(outp,1,o,k),getColor(outp,4,i-1,j)), np.array_equal(getColor(outp,1,o,k),getColor(outp,2,i,j-1)) , np.array_equal(getColor(outp,2,o,k),getColor(outp,3,i-1,j)))
+                            #print(np.array_equal(getColor(outp,2,o,k),getColor(outp,3,i-1,j)) , np.array_equal(getColor(outp,4,o,k),getColor(outp,3,i,j-1)) , np.array_equal(getColor(outp,1,o,k),getColor(outp,3,i-1,j-1)), np.array_equal(getColor(outp,1,o,k),getColor(outp,4,i-1,j)), np.array_equal(getColor(outp,1,o,k),getColor(outp,2,i,j-1)) , np.array_equal(getColor(outp,2,o,k),getColor(outp,3,i-1,j)))
                             if(np.array_equal(getColor(outp,2,o,k),getColor(outp,3,i-1,j)) and np.array_equal(getColor(outp,4,o,k),getColor(outp,3,i,j-1)) and np.array_equal(getColor(outp,1,o,k),getColor(outp,3,i-1,j-1))and np.array_equal(getColor(outp,1,o,k),getColor(outp,4,i-1,j))and np.array_equal(getColor(outp,1,o,k),getColor(outp,2,i,j-1)) and np.array_equal(getColor(outp,2,o,k),getColor(outp,3,i-1,j))):
                                 moverPieza(outp,o,k,i,j)
                                 cortar=True
@@ -90,6 +90,7 @@ for a in range(1):
 
 
 
+moverPieza(outp,4,19,3,7)
 
 img = Image.fromarray(outp, 'RGB')
 img.save('my1.png')
