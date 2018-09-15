@@ -28,7 +28,7 @@ outp=np.asarray(outp)
 img = Image.fromarray(outp, 'RGB')
 img.save('my.png')
 for i in range(1):
-    for j in range(1,20):
+    for j in range(20):
         romper=False
         for o in range(i,20):
             if romper:
