@@ -114,6 +114,7 @@ for a in range(1):
 moverPieza(outp,12,19,15,19)
 moverPieza(outp,13,19,18,19)
 moverPieza(outp,14,19,17,19)
+moverPieza(outp,16,19,15,19)
 for a in range(20):
     for b in range(20):
         if(np.array_equal(getColor(outp,1,a,b),getColor(outp,4,2,8)) and np.array_equal(getColor(outp,2,a,b),getColor(outp,3,2,8)) and np.array_equal(getColor(outp,3,a,b),getColor(outp,4,3,9))and np.array_equal(getColor(outp,4,a,b),getColor(outp,3,3,7))):
