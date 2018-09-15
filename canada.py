@@ -18,7 +18,7 @@ def getColor(im,n,i,j):
         b=4
     return im[5*i+a,5*j+b]
 def bon(col):
-    if(np.array_equal(col,npasarray([255,255,255])) or np.array_equal(col,npasarray([0,0,0]))):
+    if(np.array_equal(col,np.asarray([255,255,255])) or np.array_equal(col,np.asarray([0,0,0]))):
         return True
     return False
 
