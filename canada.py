@@ -53,7 +53,7 @@ moverPieza(outp,5,10,19,17)
 moverPieza(outp,5,2,19,18)
 
 
-for a in range(1):
+for a in range(2):
     for i in range(1,20):
         for j in range(20):
             cortar=False
