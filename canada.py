@@ -17,6 +17,11 @@ def getColor(im,n,i,j):
     if(n==3 or n==2):
         b=4
     return im[5*i+a,5*j+b]
+def bon(col):
+    if(np.array_equal(col,npasarray([255,255,255])) or np.array_equal(col,npasarray([0,0,0]))):
+        return True
+    return False
+
 
 inp = misc.imread('rompecabezas.png')
 print(inp[1,1])
@@ -30,11 +35,17 @@ print(getColor(outp,4,0,0))
 img = Image.fromarray(outp, 'RGB')
 img.save('my.png')
 for i in range(1):
-    for j in range(20):
+    for j in range(1):
+        romper=False
         for o in range(i,20):
+            if romper:
+                break
             for k in range(j,20):
                 if(j==0 and i==0):
-                    if
+                    if(bon(getColor(outp,1,o,k)):
+                        moverPieza(outp,o,k,0,0)
+                        romper=True
+                        break
 
 
 
