@@ -48,13 +48,13 @@ moverPieza(outp,17,12,0,8)
 moverPieza(outp,18,10,0,14)
 moverPieza(outp,19,17,0,19)
 moverPieza(outp,19,5,3,3)
-moverPieza(outp,4,14,19,19)
+moverPieza(outp,4,14,19,13)
 moverPieza(outp,5,10,19,17)
 moverPieza(outp,5,2,19,18)
 moverPieza(outp,5,14,19,16)
 moverPieza(outp,5,12,19,15)
 moverPieza(outp,18,14,19,14)
-
+moverPieza(outp,17,15,19,19)
 
 for a in range(1):
     for i in range(1,20):
@@ -75,6 +75,19 @@ for a in range(1):
                                 break
                         elif(i==0):
                             if(bon(getColor(outp,2,o,k)) and bon(getColor(outp,1,o,k)) and np.array_equal(getColor(outp,4,o,k),getColor(outp,3,i,j-1)) ):
+                                moverPieza(outp,o,k,i,j)
+                                cortar=True
+                                break
+                        elif(i==19 and j==19):
+                                cortar=True
+                                break
+                        elif(i==19):
+                            if(bon(getColor(outp,3,o,k)) and bon(getColor(outp,4,o,k)) and np.array_equal(getColor(outp,1,o,k),getColor(outp,2,i,j-1)) ):
+                                moverPieza(outp,o,k,i,j)
+                                cortar=True
+                                break
+                        elif(j==19):
+                            if(bon(getColor(outp,2,o,k)) and bon(getColor(outp,3,o,k)) and np.array_equal(getColor(outp,1,o,k),getColor(outp,4,i-1,j)) ):
                                 moverPieza(outp,o,k,i,j)
                                 cortar=True
                                 break
