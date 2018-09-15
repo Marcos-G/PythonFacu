@@ -12,7 +12,7 @@ for i in range(23):
     for j in range(24):
         if(inp[40*i:40*i+40,40*j:40*j+40].tobytes() in pokenumbers):
             resultado+=str(pokenumbers[inp[40*i:40*i+40,40*j:40*j+40].tobytes()])
-            resultador+=str(pokenumbers[inp[40*i:40*i+40,40*j:40*j+40].tobytes()]).reverse()
+            resultador+=str(pokenumbers[inp[40*i:40*i+40,40*j:40*j+40].tobytes()])[::-1]
         else:
             img = Image.fromarray(inp[40*i:40*i+40,40*j:40*j+40], 'RGB')
             img.show()
