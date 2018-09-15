@@ -31,6 +31,7 @@ def rsa_generate_key():
         e = 10001
         if extended_gcd(e, phi) == 1:
             break
+    print(e,phi)
     d = multiplicative_inverse(e, phi)
     return (n, e, d)
 
