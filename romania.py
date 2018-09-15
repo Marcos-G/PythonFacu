@@ -27,9 +27,7 @@ def rsa_generate_key():
     phi = (p - 1) * (q - 1)
     # Here we pick a random e, but a fixed value for e can also be used.
     e = 10001
-        print(e,phi)
-        if extended_gcd(e, phi) == 1:
-            break
+    print(e,phi)
 
     d = multiplicative_inverse(e, phi)
     return (n, e, d)
