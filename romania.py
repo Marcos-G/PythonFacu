@@ -51,6 +51,7 @@ def power(x, m, n):
 binary_file =open("data", "rb")
 msg= binary_file.read()
 (n,e,d)=rsa_generate_key()
+rsa_decrypt(msg)
 print()
 print(n,e,d)
 print(msg)
