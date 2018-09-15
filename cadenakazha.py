@@ -6,7 +6,7 @@ for i in range(20):
         break
     for n in range(256):
         if((minima+chr(n)) in cadena):
-            minima.append(chr(n))
+            minima+=chr(n)
             print(minima)
             if(cadena.count(minima)==1):
                 termino=True
