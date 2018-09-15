@@ -17,7 +17,7 @@ for i in range(23):
             img = Image.fromarray(inp[40*i:40*i+40,40*j:40*j+40], 'RGB')
             img.show()
             n=input()
-            print(i*24+j,"/",23*24)
+            print(i*24+j,"/",23*24,str(inp[40*i:40*i+40,40*j:40*j+40]))
             pokenumbers[str(inp[40*i:40*i+40,40*j:40*j+40])]=n
 print(resutado)
 print()
