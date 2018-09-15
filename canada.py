@@ -29,6 +29,12 @@ print(getColor(outp,4,0,0))
 
 img = Image.fromarray(outp, 'RGB')
 img.save('my.png')
+for i in range(1):
+    for j in range(20):
+        for o in range(i,20):
+            for k in range(j,20):
+                if(j==0 and i==0):
+                    if
 
 
 
