@@ -2,8 +2,15 @@ from scipy import misc
 from PIL import Image
 import numpy as np
 import copy
-
+colocados=[]
 def moverPieza(im,i1,j1,i2,j2):
+    global colocados
+    print("m",i1,j1,i2,j2)
+    temp=copy.deepcopy(im[i1*5:i1*5+5,j1*5:j1*5+5])
+    im[i1*5:i1*5+5,j1*5:j1*5+5]=im[i2*5:i2*5+5,j2*5:j2*5+5]
+    im[i2*5:i2*5+5,j2*5:j2*5+5]=temp
+    colocados.append((i2,j2))
+def moverPiezaP(im,i1,j1,i2,j2):
     print("m",i1,j1,i2,j2)
     temp=copy.deepcopy(im[i1*5:i1*5+5,j1*5:j1*5+5])
     im[i1*5:i1*5+5,j1*5:j1*5+5]=im[i2*5:i2*5+5,j2*5:j2*5+5]
@@ -47,15 +54,15 @@ moverPieza(outp,17,4,0,10)
 moverPieza(outp,17,12,0,8)
 moverPieza(outp,18,10,0,14)
 moverPieza(outp,19,17,0,19)
-moverPieza(outp,19,5,3,3)
-moverPieza(outp,4,14,19,13)
-moverPieza(outp,5,10,19,17)
-moverPieza(outp,5,2,19,18)
-moverPieza(outp,5,14,19,16)
-moverPieza(outp,5,12,19,15)
-moverPieza(outp,18,14,19,14)
-moverPieza(outp,17,15,19,19)
-moverPieza(outp,7,18,19,19)
+moverPiezaP(outp,19,5,3,3)
+moverPiezaP(outp,4,14,19,13)
+moverPiezaP(outp,5,10,19,17)
+moverPiezaP(outp,5,2,19,18)
+moverPiezaP(outp,5,14,19,16)
+moverPiezaP(outp,5,12,19,15)
+moverPiezaP(outp,18,14,19,14)
+moverPiezaP(outp,17,15,19,19)
+moverPiezaP(outp,7,18,19,19)
 
 for a in range(1):
     for i in range(1,20):
@@ -65,7 +72,7 @@ for a in range(1):
                 if(cortar):
                     break
                 for k in range(20):
-                    if(o>i or (0==i and k>j)):
+                    if((o,k) not in colocados):
                         if(j==0 and i==0):
                             cortar=True
                             break
