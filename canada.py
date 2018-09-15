@@ -94,6 +94,9 @@ for a in range(1):
 
 
 
-
+for a in range(20):
+    for b in range(20):
+        if(np.array_equal(getColor(outp,1,a,b),getColor(outp,4,2,8)) and np.array_equal(getColor(outp,2,a,b),getColor(outp,3,2,8)) and np.array_equal(getColor(outp,3,a,b),getColor(outp,4,3,9))and np.array_equal(getColor(outp,4,a,b),getColor(outp,3,3,7))):
+            print("el puto esta en:",a,b)
 img = Image.fromarray(outp, 'RGB')
 img.save('my1.png')
