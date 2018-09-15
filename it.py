@@ -4,7 +4,7 @@ inp="a"
 c=0
 b=True
 for i in range(10):
-    c=c*2+(-1)**i
+    c=c*2-(-1)**i
     print(i,c)
 '''for i in range(400):
     print((2**i)%123456789)
