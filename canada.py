@@ -1,9 +1,9 @@
 from scipy import misc
 from PIL import Image
 
-input = misc.imread('rompecabezas.png')
-print(arr[1,1])
-output[100,100]=[255,255,255]
-img = Image.fromarray(output, 'RGB')
+inp = misc.imread('rompecabezas.png')
+print(inp[1,1])
+outp[100,100]=[255,255,255]
+img = Image.fromarray(outp, 'RGB')
 img.save('my.png')
 img.show()
