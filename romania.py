@@ -2,7 +2,6 @@ def extended_gcd(a, b):
     """Returns pair (x, y) such that xa + yb = gcd(a, b)"""
     x, lastx, y, lasty = 0, 1, 1, 0
     while b != 0:
-        print("demora")
         q, r = divmod(a, b)
         a, b = b, r
         x, lastx = lastx - q * x, x
@@ -27,11 +26,11 @@ def rsa_generate_key():
     n = p * q
     phi = (p - 1) * (q - 1)
     # Here we pick a random e, but a fixed value for e can also be used.
-    while True:
-        e = 10001
+    e = 10001
+        print(e,phi)
         if extended_gcd(e, phi) == 1:
             break
-    print(e,phi)
+
     d = multiplicative_inverse(e, phi)
     return (n, e, d)
 
