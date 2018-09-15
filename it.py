@@ -11,8 +11,12 @@ for i in range(50):
     J[i+1]=c
 supern="110101010110000100001111011001001000001001101110"[::-1]
 acu=0
+check=0
 for i in range(len(supern)):
-    print("an+"+str(i+1)+"=an*2^"+str(i)+"+"+str(J[i+1]))
-    acu=(acu*(2**(i+1))+J[i+1])%123456789
-    print(acu)
+
+    if(supern[i]==1):
+        check+=i+1
+        print("an+"+str(i+1)+"=an*2^"+str(i)+"+"+str(J[i+1]))
+        acu=(acu*(2**(i+1))+J[i+1])%123456789
+        print(acu)
 print(acu)
