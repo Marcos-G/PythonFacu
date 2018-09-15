@@ -50,4 +50,4 @@ def power(x, m, n):
     return a
 msg="<UËA9 |u2dJ<e¢sDaž¬ù§Zú"
 (n,e,d)=rsa_generate_key()
-print(rsa_decrypt(msg,n,d))
+print(n,d)
