@@ -12,6 +12,6 @@ for i in range(20):
                 termino=True
 a=cadena.find(minima)
 b=a+len(cadena)/2
-print(a)
+print(cadena[a:a+6])
 print(b)
 print(cadena[int(b):int(b)+2976])
