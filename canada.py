@@ -10,7 +10,7 @@ outp=np.asarray(outp)
 img = Image.fromarray(outp, 'RGB')
 img.save('my.png')
 img.show()
-temp=outp[0:4,0:4]
+temp=outp[0:5,0:5]
 img = Image.fromarray(temp, 'RGB')
 img.save('my1.png')
 def moverPieza(i1,j1,i2,j2):
