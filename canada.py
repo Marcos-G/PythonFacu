@@ -48,7 +48,7 @@ moverPieza(outp,17,12,0,3)
 moverPieza(outp,18,10,0,13)
 moverPieza(outp,19,17,0,19)
 moverPieza(outp,18,7,19,19)
-moverPieza(outp,18,7,19,19)
+moverPieza(outp,4,14,19,18)
 
 for a in range(1):
     for i in range(1,20):
