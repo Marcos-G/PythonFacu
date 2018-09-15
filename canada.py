@@ -65,7 +65,7 @@ for a in range(1):
                 if(cortar):
                     break
                 for k in range(20):
-                    if(o>i or k>j):
+                    if(o>i or (0==i and k>j)):
                         if(j==0 and i==0):
                             cortar=True
                             break
@@ -92,7 +92,6 @@ for a in range(1):
 
 
 
-moverPieza(outp,7,5,3,8)
 
 for a in range(20):
     for b in range(20):
