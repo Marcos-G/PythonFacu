@@ -30,7 +30,7 @@ img.save('my.png')
 moverPieza(outp,18,1,0,0)
 for a in range(1):
     for i in range(1):
-        for j in range(20):
+        for j in range(1,20):
             for o in range(i,20):
                 for k in range(j,20):
                     if(j==0):
