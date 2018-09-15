@@ -48,14 +48,14 @@ moverPieza(outp,17,12,0,3)
 moverPieza(outp,18,10,0,13)
 moverPieza(outp,19,17,0,19)
 for a in range(1):
-    for i in range(20):
-        for j in range(1,20):
+    for i in range(1,20):
+        for j in range(20):
             cortar=False
-            for o in range(20):
+            for o in range(i,20):
                 if(cortar):
                     break
                 for k in range(20):
-                    if(i==0):
+                    if(j==0):
                         if(bon(getColor(outp,4,o,k)) and bon(getColor(outp,1,o,k)) and np.array_equal(getColor(outp,2,o,k),getColor(outp,3,i-1,j))):
                             moverPieza(outp,o,k,i,j)
                             cortar=True
