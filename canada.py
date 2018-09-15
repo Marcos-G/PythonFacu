@@ -90,7 +90,7 @@ for a in range(1):
 
 
 
-moverPieza(outp,4,19,3,7)
+moverPieza(outp,4,19,3,8)
 
 img = Image.fromarray(outp, 'RGB')
 img.save('my1.png')
