@@ -31,29 +31,20 @@ img.save('my.png')
 for i in range(20):
     for j in range(20):
 
-        romper=False
         for o in range(20):
-            if romper:
-                break
+
             for k in range(20):
-                if(i==0 and j==0):
-                    romper=True
-                    break
-                elif(i==0):
+                if(i==0):
                     if(np.array_equal(getColor(outp,1,o,k),getColor(outp,2,i,j-1)) and np.array_equal(getColor(outp,4,o,k),getColor(outp,3,i,j-1))):
                         moverPieza(outp,o,k,i,j)
-                        romper=True
-                        break
                 elif(j==0):
                     if(np.array_equal(getColor(outp,2,o,k),getColor(outp,3,i-1,j)) and np.array_equal(getColor(outp,1,o,k),getColor(outp,4,i-1,j))):
                         moverPieza(outp,o,k,i,j)
-                        romper=True
-                        break
+
                 else:
                     if(np.array_equal(getColor(outp,2,o,k),getColor(outp,3,i-1,j)) and np.array_equal(getColor(outp,1,o,k),getColor(outp,4,i-1,j)) and np.array_equal(getColor(outp,1,o,k),getColor(outp,2,i,j-1)) and np.array_equal(getColor(outp,4,o,k),getColor(outp,3,i,j-1))):
                         moverPieza(outp,o,k,i,j)
-                        romper=True
-                        break
+
 
 
 
