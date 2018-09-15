@@ -27,8 +27,9 @@ outp=[[inp[i*10+5,j*10+5] for j in range(100)] for i in range(100)]
 outp=np.asarray(outp)
 img = Image.fromarray(outp, 'RGB')
 img.save('my.png')
+moverPieza(outp,7,17,0,19)
 for i in range(1):
-    for j in range(20):
+    for j in range(18,-1,-1):
         romper=False
         for o in range(i,20):
             if romper:
@@ -40,7 +41,7 @@ for i in range(1):
                         romper=True
                         break
                 elif(i==0):
-                    if(bon(getColor(outp,1,o,k)) and np.array_equal(getColor(outp,4,o,k),getColor(outp,3,i,j-1))):
+                    if(bon(getColor(outp,2,o,k)) and np.array_equal(getColor(outp,3,o,k),getColor(outp,4,i,j+1))):
                         moverPieza(outp,o,k,i,j)
                         romper=True
                         break
