@@ -5,6 +5,7 @@ for i in range(20):
     if(termino):
         break
     for n in range(256):
+        print(i,n)
         if((minima+chr(n)) in cadena):
             minima+=chr(n)
             print(minima)
