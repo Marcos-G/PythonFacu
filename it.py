@@ -13,8 +13,8 @@ supern="110101010110000100001111011001001000001001101110"[::-1]
 acu=0
 for i in range(len(supern)):
     print("an+"+str(i)+"=an*2^"+str(i)+"+"+str(J[i])
-
-'''for i in range(400):
+'''
+for i in range(400):
     print((2**i)%123456789)
 for i in range(0,234612846789231,2):
     c*=4
