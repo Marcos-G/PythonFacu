@@ -19,3 +19,6 @@ for i in range(23):
             n=input()
             print()
             pokenumbers[inp[40*i:40*i+40,40*j:40*j+40].tobytes()]=n
+print(resutado)
+print()
+print(resultador)
