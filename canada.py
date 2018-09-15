@@ -1,5 +1,6 @@
 from scipy import misc
 from PIL import Image
+import numpy as np
 
 inp = misc.imread('rompecabezas.png')
 print(inp[1,1])
