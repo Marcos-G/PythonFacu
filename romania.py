@@ -48,6 +48,7 @@ def power(x, m, n):
         x = (x * x) % n
         m //= 2
     return a
-msg=3411360786
+binary_file =open("data", "rb")
+msg= binary_file.read()
 (n,e,d)=rsa_generate_key()
 print(rsa_decrypt(msg,n,d))
