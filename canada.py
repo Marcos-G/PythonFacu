@@ -56,7 +56,7 @@ for a in range(1):
     for i in range(1,20):
         for j in range(20):
             cortar=False
-            for o in range(20):
+            for o in range(1,20):
                 if(cortar):
                     break
                 for k in range(20):
