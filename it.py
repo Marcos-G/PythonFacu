@@ -4,7 +4,7 @@ inp="a"
 c=0
 b=True
 for i in range(234612846789231):
-    print(i+1,c)
+    print((i+1)/234612846789231.0,c)
     c=(c*2+(-1)**i)%123456789
 
 '''for i in range(400):
