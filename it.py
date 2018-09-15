@@ -3,7 +3,7 @@ gramaticas={0:gram}
 inp="a"
 c=0
 b=True
-J={}
+J={0:0}
 for i in range(50):
 
     c=(c*2+(-1)**i)
