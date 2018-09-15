@@ -22,7 +22,7 @@ def rsa_generate_key():
     q = 57248512388615138300979959427360676128469
     # Ensure q != p, though for large values of bits this is
     # statistically very unlikely
-    
+
     n = p * q
     phi = (p - 1) * (q - 1)
     # Here we pick a random e, but a fixed value for e can also be used.
@@ -41,4 +41,5 @@ def rsa_encrypt(message, n, e):
 def rsa_decrypt(cipher, n, d):
     return modular.power(cipher, d, n)
 msg="<UËA9 |u2dJ<e¢sDaž¬ù§Zú"
-(n,e,d)=rsa_generate_keys
+(n,e,d)=rsa_generate_key()
+print(rsa_decrypt(msg,n,d))
