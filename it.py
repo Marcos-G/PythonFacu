@@ -3,12 +3,12 @@ gramaticas={0:gram}
 inp="a"
 c=0
 b=True
-exp={}
 J={}
 for i in range(50):
 
-    c=(c*2+(-1)**i)%123456789
-    print(i,c)
+    c=(c*2+(-1)**i)
+    print(i+1,2**i)
+    J[i+1]=c
 '''for i in range(400):
     print((2**i)%123456789)
 for i in range(0,234612846789231,2):
