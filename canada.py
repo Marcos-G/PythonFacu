@@ -23,7 +23,7 @@ def bon(col):
 
 
 inp = misc.imread('rompecabezas.png')
-outp=[[inp[i*10,j*10] for j in range(100)] for i in range(100)]
+outp=[[inp[i*10+5,j*10+5] for j in range(100)] for i in range(100)]
 outp=np.asarray(outp)
 img = Image.fromarray(outp, 'RGB')
 img.save('my.png')
