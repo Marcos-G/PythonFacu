@@ -28,7 +28,7 @@ def rsa_generate_key():
     # Here we pick a random e, but a fixed value for e can also be used.
     while True:
         e = 10001
-        if fractions.gcd(e, phi) == 1:
+        if extended_gcd(e, phi) == 1:
             break
     d = multiplicative_inverse(e, phi)
     return (n, e, d)
