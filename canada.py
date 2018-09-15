@@ -36,7 +36,6 @@ for i in range(20):
             if romper:
                 break
             for k in range(20):
-                print(i,j)
                 if(i==0 and j==0):
                     romper=True
                     break
