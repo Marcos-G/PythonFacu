@@ -11,6 +11,7 @@ for i in range(20):
             print(minima)
             if(cadena.count(minima)==1):
                 termino=True
+            break
 a=cadena.find(minima)
 b=a+len(cadena)/2
 print(cadena[a:a+8])
