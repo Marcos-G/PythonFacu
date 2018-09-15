@@ -8,7 +8,7 @@ J={}
 for i in range(50):
 
     c=(c*2+(-1)**i)%123456789
-    print((i+1)/234612846789231.0,c)
+    print(i,c)
 '''for i in range(400):
     print((2**i)%123456789)
 for i in range(0,234612846789231,2):
