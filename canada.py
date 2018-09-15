@@ -35,12 +35,12 @@ for i in range(20):
             for k in range(j,20):
                 if(j==0 and i==0):
                     if(bon(getColor(outp,1,o,k)) and bon(getColor(outp,2,o,k)) and bon(getColor(outp,4,o,k))):
-                        moverPieza(outp,o,k,0,0)
+                        moverPieza(outp,o,k,i,j)
                         romper=True
                         break
                 elif(j==0):
                     if(bon(getColor(outp,1,o,k)) and bon(getColor(outp,2,o,k)) and np.array_equal(getColor(outp,4,o,k),getColor(outp,3,i-1,j))):
-                        moverPieza(outp,o,k,0,0)
+                        moverPieza(outp,o,k,i,j)
                         romper=True
                         break
 
