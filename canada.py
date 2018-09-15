@@ -28,7 +28,7 @@ outp=np.asarray(outp)
 img = Image.fromarray(outp, 'RGB')
 img.save('my.png')
 moverPieza(outp,1,18,0,0)
-for a in range(10):
+for a in range(1):
     for i in range(20):
         for j in range(20):
             for o in range(20):
