@@ -3,9 +3,12 @@ gramaticas={0:gram}
 inp="a"
 c=0
 b=True
-for i in range(400):
+for i in range(10):
+    c=c*2+(-1)**i
+    print(c)
+'''for i in range(400):
     print((2**i)%123456789)
-'''for i in range(0,234612846789231,2):
+for i in range(0,234612846789231,2):
     c*=4
     c+=1
     if(c>123456789):
