@@ -119,7 +119,9 @@ moverPieza(outp,19,19,16,19)
 moverPieza(outp,19,19,18,19)
 for a in range(20):
     for b in range(20):
-        if(np.array_equal(getColor(outp,1,a,b),getColor(outp,4,2,8)) and np.array_equal(getColor(outp,2,a,b),getColor(outp,3,2,8)) and np.array_equal(getColor(outp,3,a,b),getColor(outp,4,3,9))and np.array_equal(getColor(outp,4,a,b),getColor(outp,3,3,7))):
-            print("el puto esta en:",a,b)
+        outp[a*5,b*5]=[0,0,0]
+        outp[a*5,b*5+4]=[0,0,0]
+        outp[a*5+4,b*5]=[0,0,0]
+        outp[a*5+4,b*5+4]=[0,0,0]
 img = Image.fromarray(outp, 'RGB')
 img.save('my1.png')
