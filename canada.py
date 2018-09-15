@@ -27,8 +27,8 @@ outp=[[inp[i*10+5,j*10+5] for j in range(100)] for i in range(100)]
 outp=np.asarray(outp)
 img = Image.fromarray(outp, 'RGB')
 img.save('my.png')
-moverPieza(outp,7,17,0,0)
-for i in range(1):
+#moverPieza(outp,7,17,0,0)
+for i in range(20):
     for j in range(20):
 
         romper=False
