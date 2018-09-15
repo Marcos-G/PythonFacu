@@ -32,8 +32,8 @@ for i in range(1,1909991):
         s-=1
     b=not b
     print(i/1909991.0)
-print(s)'''
-"""110101010110000100001111011001001000001001101111
+print(s)
+110101010110000100001111011001001000001001101111
 234612846789231
 123 ¡No encontrado! 43.4 hello ¡No encontrado! Hello Universe! World! New ¡No encontrado! ¡No encontrado! 34 9.845 ¡No encontrado! ¡No encontrado! 4$ 6$ ¡No encontrado! ¡No encontrado! ¡No encontrado!
-"""
+'''
