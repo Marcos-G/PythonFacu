@@ -14,4 +14,4 @@ a=cadena.find(minima)
 b=a+len(cadena)/2
 print(a)
 print(b)
-print(cadena[b:b+2976])
+print(cadena[int(b):int(b)+2976])
