@@ -36,7 +36,7 @@ for i in range(1):
                 break
             for k in range(j,20):
                 if(i==0):
-                    if(bon(getColor(outp,2,o,k)) and np.array_equal(getColor(outp,3,o,k),getColor(outp,4,i,j+1))):
+                    if(bon(getColor(outp,2,o,k)) or bon(getColor(outp,1,o,k))):
                         moverPieza(outp,o,k,i,j)
                         romper=True
                         break
