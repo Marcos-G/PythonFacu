@@ -53,6 +53,7 @@ moverPieza(outp,5,10,19,17)
 moverPieza(outp,5,2,19,18)
 moverPieza(outp,5,14,19,16)
 moverPieza(outp,5,12,19,15)
+moverPieza(outp,18,14,19,14)
 
 
 for a in range(1):
