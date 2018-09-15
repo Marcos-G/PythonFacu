@@ -3,7 +3,7 @@ from PIL import Image
 import numpy as np
 
 def moverPieza(im,i1,j1,i2,j2):
-    temp=im[i1*5:i1*5+5,j1*5:j1*5+5]
+    temp=copy(im[i1*5:i1*5+5,j1*5:j1*5+5])
     im[i1*5:i1*5+5,j1*5:j1*5+5]=im[i2*5:i2*5+5,j2*5:j2*5+5]
     im[i2*5:i2*5+5,j2*5:j2*5+5]=temp
 
