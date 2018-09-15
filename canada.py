@@ -47,15 +47,12 @@ moverPieza(outp,17,4,0,5)
 moverPieza(outp,17,12,0,3)
 moverPieza(outp,18,10,0,13)
 moverPieza(outp,19,17,0,19)
-'''for a in range(1):
-    for i in range(1):
+for a in range(1):
+    for i in range(1,20):
         for j in range(1,20):
             for o in range(i,20):
                 for k in range(j,20):
-                    if(i==0):
-                        if(bon(getColor(outp,1,o,k)) and bon(getColor(outp,2,o,k)) and np.array_equal(getColor(outp,4,o,k),getColor(outp,3,i,j-1))):
-                            moverPieza(outp,o,k,i,j)
-                    elif(j==0):
+                    if(j==0):
                         if(bon(getColor(outp,4,o,k)) and bon(getColor(outp,1,o,k)) and np.array_equal(getColor(outp,2,o,k),getColor(outp,3,i-1,j))):
                             moverPieza(outp,o,k,i,j)
                     else:
@@ -67,6 +64,6 @@ moverPieza(outp,19,17,0,19)
 
 
 
-'''
+
 img = Image.fromarray(outp, 'RGB')
 img.save('my1.png')
