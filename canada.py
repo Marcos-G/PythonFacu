@@ -12,9 +12,9 @@ def moverPieza(im,i1,j1,i2,j2):
 def getColor(im,n,i,j):
     a=0
     b=0
-    if(n==2 or n==3):
+    if(n==4 or n==3):
         a=4
-    if(n==3 or n==4):
+    if(n==3 or n==2):
         b=4
     return im[5*i+a,5*j+b]
 
