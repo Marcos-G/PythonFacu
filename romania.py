@@ -47,13 +47,7 @@ def power(x, m, n):
         x=(x*x)%n
         m//=2
     return a
-def inverse(x, m):
-    a, b, u = 0
-    while x > 0
-        q = b // x # integer division
-        x, a, b, u := b % x, u, x, a - q * u
-    if b == 1 return a % m
-    error "must be coprime"
+
 binary_file =open("data", "rb")
 msg= binary_file.read()
 (n,e,d)=rsa_generate_key()
