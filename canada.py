@@ -92,7 +92,7 @@ for a in range(1):
 
 
 
-
+moverPieza(outp,7,5,3,8)
 
 for a in range(20):
     for b in range(20):
