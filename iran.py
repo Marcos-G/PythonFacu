@@ -20,6 +20,6 @@ for i in range(23):
             for a in range(23):
                 for b in range(24):
                     if( (a,b) not in calculado and (inp[40*a:40*a+40,40*b:40*b+40]-inp[40*i:40*i+40,40*j:40*j+40]).sum()<=3000):
-                        res[i][j]=n
-                        calculado.append((i,j))
+                        res[a][b]=n
+                        calculado.append((a,b))
             print(str(res))
