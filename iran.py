@@ -28,7 +28,7 @@ res=""
 resi=""
 for i in range(len(array)):
     for j in range(len(array[i])):
-        res+=chr(int(array[i][j]))
-        resi+=chr(int(array[i][j][::-1]))
+        res+=unichr(int(array[i][j]))
+        resi+=unichr(int(array[i][j][::-1]))
 print(res)
 print(resi)
