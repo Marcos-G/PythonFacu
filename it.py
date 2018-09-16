@@ -6,7 +6,7 @@ b=True
 J={0:0}
 for i in range(2**48):
 
-    c=(c*2+(-1)**i)
+    c=(c*2+(-1)**i)%123456789
     J[i+1]=c
     print(i+1,J[i+1])
 
