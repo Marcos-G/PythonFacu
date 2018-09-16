@@ -7,7 +7,7 @@ def contarFallas(n,arr):
             return 0
     else:
         con=0
-        for i in range 42:
+        for i in range(42):
             array=deepcopy(arr)
             j=i
             while(j<42 and array[j]==1):
@@ -15,3 +15,4 @@ def contarFallas(n,arr):
             if(j<42):
                 array[j]=1
             cont+=contarFallas(n+1,array)
+print(contarFallas(0,[]))
