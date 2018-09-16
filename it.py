@@ -12,7 +12,7 @@ for i in range(50):
 
 #supern="110101010110000100001111011001001000001001101111"[::-1]
 supern="11110"[::-1]
-acu=0
+acu=1
 check=0
 for i in range(len(supern)):
     if(supern[i]=='1'):
