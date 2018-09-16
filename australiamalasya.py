@@ -19,9 +19,10 @@ def get_tag_value(f):
             curr_tag_name = curr_line.split()[0]
             value_list = curr_line.replace(curr_tag_name, '').split()
             prev_tag = '.'.join(prev_tag_name_list)
-            for index in range(0, len(value_list),3):
-                tag_name = value_list[index].strip()
-                tag_val = value_list[index+2].replace('"','').strip()
+            for index in range(len(value_list)):
+                tags=value_list[index].split("=")
+                tag_name = tag[0].strip()
+                tag_val = tag[2].replace('"','').strip()
 
                 if prev_tag_name_list:
                     temp_tag = '%s.%s' %(prev_tag, curr_tag_name)
