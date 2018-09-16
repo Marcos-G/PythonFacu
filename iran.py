@@ -3,8 +3,8 @@ import numpy as np
 
 inp = misc.imread('test.jpg')
 pokenumbers={}
-for i in range(9200):
-    for j in range(9200):
+for i in range(0,9200,400):
+    for j in range(0,9200,400):
         if(np.array_equal(inp[i:i+400,j:j+400],inp[0:400,0:400])):
             print("uno")
 resultado=""
