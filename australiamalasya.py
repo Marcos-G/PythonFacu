@@ -8,7 +8,7 @@ def get_tag_value(f):
     for count in range(int(num_line)):
         #print(dict_tag_value)
         curr_line = f.readline()
-        if curr_line.startswith('</'):
+        if '</' in curr_line:
             prev_tag_name_list.pop(-1)
         else:
             curr_line = curr_line.replace('<','').replace('>', '')
