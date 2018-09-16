@@ -37,7 +37,7 @@ def get_tag_value(f,of):
         if entry in dict_tag_value:
             of.write(dict_tag_value[entry]+chr(0x0A))
         else:
-            of.write ('Not Found!'+chr(0x0A))
+            of.write ('¡No encontrado!'+chr(0x0A))
 
 of=open('output.txt', 'a')
 for i in range(1,16):
