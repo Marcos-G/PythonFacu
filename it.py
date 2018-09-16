@@ -18,6 +18,6 @@ for i in range(len(supern)):
 
         acu*=h
         acu+=J[2**1]
-        c=c%123456789
+        acu=acu%123456789
 
-print(check)
+print(acu)
