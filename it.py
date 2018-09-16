@@ -18,7 +18,7 @@ for i in range(len(supern)):
     print(len(J))
 
 #supern="11010"[::-1]
-acu=0
+'''acu=0
 check=0
 for i in range(len(supern)):
     if(supern[i]=='1'):
@@ -29,3 +29,4 @@ for i in range(len(supern)):
         print(acu)
 print(acu)
 print(check)
+'''
