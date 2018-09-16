@@ -35,9 +35,9 @@ def get_tag_value(f,of):
     for count in range(int(num_query)):
         entry = f.readline().strip()
         if entry in dict_tag_value:
-            of.write(dict_tag_value[entry],end=chr(0x0A))
+            of.write(dict_tag_value[entry]+chr(0x0A))
         else:
-            of.write ('¡No encontrado!')
+            of.write ('¡No encontrado!'+chr(0x0A))
 
 of=open('output.txt', 'w')
 for i in range(1,16):
