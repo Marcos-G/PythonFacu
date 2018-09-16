@@ -1,5 +1,5 @@
-def get_tag_value():
-    line = input()
+def get_tag_value(f):
+    line = f.readline()
     num_line, num_query = line.split()
 
     dict_tag_value = {}
@@ -7,7 +7,7 @@ def get_tag_value():
 
     for count in range(int(num_line)):
         print(dict_tag_value)
-        curr_line = input()
+        curr_line = f.readline()
         if curr_line.startswith('</'):
             prev_tag_name_list.pop(-1)
         else:
@@ -32,13 +32,18 @@ def get_tag_value():
                 prev_tag_name_list.append(curr_tag_name)
 
     for count in range(int(num_query)):
-        entry = input()
+        entry = f.readline()
         if entry in dict_tag_value:
-            print (dict_tag_value[entry],end=" ")
+            print (dict_tag_value[entry])
         else:
-            print ('¡No encontrado!',end=" ")
+            print ('¡No encontrado!')
 
 
-
-get_tag_value()
-cosa=input()
+for i in range(1,16):
+    n="input-"
+    if(i<10):
+        n+="0"
+        n+=str(i)+".hrml"
+        f = open(n)
+        get_tag_value(f)
+        f.close()
