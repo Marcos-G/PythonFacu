@@ -1,5 +1,8 @@
 import copy
+prog=0
 def contarFallas(n,arr):
+    global prog
+    prog+=1
     if(n==27):
         if( arr.count(1)<27):
             return 1
