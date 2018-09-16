@@ -20,4 +20,4 @@ for i in range(len(supern)):
         acu+=J[2**1]
         c=c%123456789
 
-print(str(J))
+print(check)
