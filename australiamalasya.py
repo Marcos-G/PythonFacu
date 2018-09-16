@@ -40,7 +40,7 @@ def get_tag_value(f):
             print ('¡No encontrado!')
 
 
-for i in range(1,16):
+for i in range(1,2):
     n="input-"
     if(i<10):
         n+="0"
