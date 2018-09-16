@@ -27,6 +27,7 @@ print(contarFallas(0,[0 for i in range(42)]))
 import random
 c=0
 s=42
+prom=0
 for n in range(10000000):
     array=[0 for i in range(s+1)]
     for i in range(27):
@@ -36,4 +37,5 @@ for n in range(10000000):
         array[j]=1
     if(array[s]==1):
         c+=1
-    print(n,c/(n+1))
+    prom+=((c/(n+1))-prom)/(n+1)
+    print(n,prom)
