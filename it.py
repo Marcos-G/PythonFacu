@@ -17,5 +17,6 @@ for i in range(len(supern)):
         acu+=J[2**1]
         acu=acu%123456789
         print(acu)
-
+print(a)
+print(acu)
 print(str(J))
