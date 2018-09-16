@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 from matplotlib import pyplot as plt
 
-img = cv2.imread('test.png',0)
+img = cv2.imread('test.jpg',0)
 img2 = img.copy()
 template = img[0:40,0:40]
 w, h = template.shape[::-1]
