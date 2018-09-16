@@ -11,7 +11,7 @@ for i in range(50):
     print(i+1,J[i+1])
 
 #supern="110101010110000100001111011001001000001001101111"[::-1]
-supern="11110"[::-1]
+supern="11010"[::-1]
 acu=0
 check=0
 for i in range(len(supern)):
