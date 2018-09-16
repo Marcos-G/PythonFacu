@@ -33,7 +33,7 @@ def get_tag_value(f):
                 prev_tag_name_list.append(curr_tag_name)
     print(dict_tag_value)
     for count in range(int(num_query)):
-        entry = f.readline()
+        entry = f.readline().strip()
         print(entry)
         if entry in dict_tag_value:
             print (dict_tag_value[entry])
