@@ -3,7 +3,7 @@ import numpy as np
 
 inp = misc.imread('test.jpg')
 pokenumbers={}
-print(inp[400*2:400*2+400,400*7:400*7+400]-inp[0:400,0:400])
+print((inp[400*2:400*2+400,400*7:400*7+400]-inp[0:400,0:400]).sum())
 resultado=""
 resultador=""
 print(len(inp))
