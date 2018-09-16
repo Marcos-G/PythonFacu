@@ -21,5 +21,4 @@ for i in range(len(supern)):
         acu=acu%123456789
         print(acu)
 
-print(str(bin(acu)))
-def Jacohstal()
+print(str(bin(acu)).pop().pop())
