@@ -34,6 +34,7 @@ def get_tag_value(f):
 
     for count in range(int(num_query)):
         entry = f.readline()
+        print(entry)
         if entry in dict_tag_value:
             print (dict_tag_value[entry])
         else:
