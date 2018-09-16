@@ -21,7 +21,7 @@ def contarFallas(n,arr):
                 array[j]=1
                 con+=contarFallas(n+1,array)
             else:
-                con+=con+=1/(42^(n+1))
+                con+=1/(42^(n+1))
 
         return con
 print(contarFallas(0,[0 for i in range(42)]))
