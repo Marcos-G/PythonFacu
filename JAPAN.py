@@ -1,11 +1,13 @@
 import copy
 prog=0
+
 def contarFallas(n,arr):
     global prog
     prog+=1
+    print(prog)
     if(n==27):
         if( arr.count(1)<27):
-            return 1
+            return 1/(42^27)
         else:
             return 0
     else:
@@ -17,6 +19,9 @@ def contarFallas(n,arr):
                 j+=1
             if(j<42):
                 array[j]=1
-            con+=contarFallas(n+1,array)
+                con+=contarFallas(n+1,array)
+            else:
+                con+=con+=1/(42^(n+1))
+
         return con
 print(contarFallas(0,[0 for i in range(42)]))
