@@ -5,7 +5,8 @@ c=0
 b=True
 J={1:1}
 supern="110101010110000100001111011001001000001001101111"[::-1]
-
+for i in range(30):
+    print(str((2**(2**i))%123456789))
 for i in range(len(supern)):
     print("ping")
     print("an+"+str(2**(i))+"=an*"+str(2**(2**(i)))+"+"+str(J[2**i]))
