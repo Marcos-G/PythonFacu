@@ -34,9 +34,9 @@ def get_tag_value(f):
     for count in range(int(num_query)):
         entry = f.readline().strip()
         if entry in dict_tag_value:
-            print (dict_tag_value[entry], end=int(0x0A))
+            print (dict_tag_value[entry], end=chr(0x0A))
         else:
-            print ('¡No encontrado!', end=int(0x0A))
+            print ('¡No encontrado!', end=chr(0x0A))
 
 
 for i in range(1,16):
