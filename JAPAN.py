@@ -1,7 +1,7 @@
 import copy
 def contarFallas(n,arr):
     if(n==27):
-        if( count(arr,1)<27):
+        if( arr.count(1)<27):
             return 1
         else:
             return 0
@@ -14,5 +14,6 @@ def contarFallas(n,arr):
                 j+=1
             if(j<42):
                 array[j]=1
-            cont+=contarFallas(n+1,array)
+            con+=contarFallas(n+1,array)
+        return con
 print(contarFallas(0,[0 for i in range(42)]))
