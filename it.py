@@ -1,7 +1,7 @@
 c=0
 b=True
 J={1:1}
-supern="10"[::-1]
+supern="1110"[::-1]
 acu=0
 check=0
 for i in range(len(supern)):
@@ -16,7 +16,7 @@ for i in range(len(supern)):
         acu*=h
         acu+=J[2**1]
         acu=acu%123456789
-        print(acu)
-print(a)
+        print(i,acu)
+print(check)
 print(acu)
 print(str(J))
