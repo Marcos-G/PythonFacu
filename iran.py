@@ -22,4 +22,4 @@ for i in range(23):
                     if( (a,b) not in calculado and (inp[40*a:40*a+40,40*b:40*b+40]-inp[40*i:40*i+40,40*j:40*j+40]).sum()<=3000):
                         res[i][j]=n
                         calculado.append((i,j))
-            print(str(sol))
+            print(str(res))
