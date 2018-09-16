@@ -5,7 +5,7 @@ c=0
 b=True
 J={1:1}
 supern="110101010110000100001111011001001000001001101111"[::-1]
-for i in range(30):
+for i in range(48):
     print(str(pow(2,2**i,123456789)))
 for i in range(len(supern)):
     print("ping")
