@@ -6,7 +6,7 @@ def get_tag_value(f):
     prev_tag_name_list = []
 
     for count in range(int(num_line)):
-        print(dict_tag_value)
+        #print(dict_tag_value)
         curr_line = f.readline()
         if curr_line.startswith('</'):
             prev_tag_name_list.pop(-1)
