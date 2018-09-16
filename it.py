@@ -1,10 +1,7 @@
-gram={'a':"al",'l':"paca",'p':"cp",'c':"pc"}
-gramaticas={0:gram}
-inp="a"
 c=0
 b=True
 J={1:1}
-supern="110"[::-1]
+supern="10"[::-1]
 acu=0
 check=0
 for i in range(len(supern)):
@@ -21,4 +18,4 @@ for i in range(len(supern)):
         acu=acu%123456789
         print(acu)
 
-print(str(J)
+print(str(J))
