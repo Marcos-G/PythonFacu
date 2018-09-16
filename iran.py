@@ -28,7 +28,7 @@ res=""
 resi=""
 for i in range(len(array)):
     for j in range(len(array[i])):
-        res+=hex(int(array[i][j]))
+        res+=hex(int(array[i][j]))[2:]
         resi+=hex(int(array[i][j][::-1]))[2:]
 print(res)
 print(resi)
