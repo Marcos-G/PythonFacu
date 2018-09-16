@@ -5,7 +5,7 @@ c=0
 b=True
 J={1:1}
 supern="110101010110000100001111011001001000001001101111"[::-1]
-
+acu=0
 for i in range(len(supern)):
     print("pang")
     h=pow(2,2**i,123456789)
@@ -15,10 +15,17 @@ for i in range(len(supern)):
     c+=J[2**i]
     c=c%123456789
     J[2**(i+1)]=c
+    if(supern[i]=='1'):
+        check+=2**(i)
+        print(check)
+        acu*=h
+        acu+=J[2**1]
+        c=c%123456789
+        print(acu)
     print(str(J))
 
 #supern="11010"[::-1]
-'''acu=0
+acu=0
 check=0
 for i in range(len(supern)):
     if(supern[i]=='1'):
