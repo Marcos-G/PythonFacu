@@ -19,7 +19,7 @@ for i in range(len(supern)):
         check+=2**(i)
         print("an+"+str(2**(i))+"=an*"+str(2**(2**(i)))+"+"+str(J[i**2]))
         print(check)
-        acu=(acu*(2**(2**i))+J[i*2])
+        acu=(acu*(2**(2**i))+J[i**2])
         print(acu)
 print(acu)
 print(check)
