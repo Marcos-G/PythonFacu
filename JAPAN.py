@@ -36,4 +36,4 @@ for n in range(1000):
         array[j]=1
     if(array[s]==1):
         c+=1
-    print(n,c/n)
+    print(n,c/(n+1)
