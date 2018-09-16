@@ -4,7 +4,7 @@ inp="a"
 c=0
 b=True
 J={1:1}
-supern="110101010110000100001111011001001000001001101110"[::-1]
+supern="1110"[::-1]
 acu=0
 check=0
 for i in range(len(supern)):
