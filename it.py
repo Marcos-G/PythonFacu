@@ -7,7 +7,9 @@ J={1:1}
 supern="110101010110000100001111011001001000001001101111"[::-1]
 
 for i in range(len(supern)):
+    print("ping")
     c=(c*(2**(2**i))+J[2**i])%123456789
+    print("pong")
     J[2**(i+1)]=c
     print(len(J))
 
