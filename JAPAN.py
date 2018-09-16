@@ -31,7 +31,7 @@ for n in range(1000):
     array=[0 for i in range(s+1)]
     for i in range(27):
         j=random.randint(0,s-1)
-        while(j<=s  and array[j]==1):
+        while(j<s  and array[j]==1):
             j+=1
         array[j]=1
     if(array[s]==1):
