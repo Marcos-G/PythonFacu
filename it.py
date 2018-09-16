@@ -10,7 +10,7 @@ for i in range(48):
 for i in range(len(supern)):
     print("ping")
     print("an+"+str(2**(i))+"=an*"+str(2**(2**(i)))+"+"+str(J[2**i]))
-    c=(c*((2**(2**i))%123456789)+J[2**i])%123456789
+    c=(c*pow(2,2**i,123456789)+J[2**i])%123456789
     print("pong")
     J[2**(i+1)]=c
     print(len(J))
