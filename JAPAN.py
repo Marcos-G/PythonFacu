@@ -27,7 +27,7 @@ print(contarFallas(0,[0 for i in range(42)]))
 import random
 c=0
 s=42
-for n in range(1000):
+for n in range(10000000):
     array=[0 for i in range(s+1)]
     for i in range(27):
         j=random.randint(0,s-1)
@@ -36,4 +36,4 @@ for n in range(1000):
         array[j]=1
     if(array[s]==1):
         c+=1
-    print(n,c/(n+1)
+    print(n,c/(n+1))
