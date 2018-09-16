@@ -21,8 +21,8 @@ def get_tag_value(f):
             prev_tag = '.'.join(prev_tag_name_list)
             for index in range(len(value_list)):
                 tags=value_list[index].split("=")
-                tag_name = tag[0].strip()
-                tag_val = tag[2].replace('"','').strip()
+                tag_name = tags[0].strip()
+                tag_val = tags[1].replace('"','').strip()
 
                 if prev_tag_name_list:
                     temp_tag = '%s.%s' %(prev_tag, curr_tag_name)
