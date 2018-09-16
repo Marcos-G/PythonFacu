@@ -1,4 +1,4 @@
-def get_tag_value(f):
+def get_tag_value(f,of):
     line = f.readline()
     num_line, num_query = line.split()
 
@@ -35,11 +35,11 @@ def get_tag_value(f):
     for count in range(int(num_query)):
         entry = f.readline().strip()
         if entry in dict_tag_value:
-            print (dict_tag_value[entry], end=chr(0x0A))
+            of.write(dict_tag_value[entry]chr(0x0A))
         else:
-            print ('¡No encontrado!', end=chr(0x0A))
+            of.write ('¡No encontrado!'+chr(0x0A))
 
-
+of=open('output.txt', 'a')
 for i in range(1,16):
     #print("archivo",i)
     n="input-"
@@ -47,5 +47,6 @@ for i in range(1,16):
         n+="0"
     n+=str(i)+".hrml"
     f = open(n)
-    get_tag_value(f)
+    get_tag_value(f,of)
     f.close()
+of.close()
