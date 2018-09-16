@@ -37,9 +37,9 @@ def get_tag_value(f,of):
         if entry in dict_tag_value:
             of.write(dict_tag_value[entry],end=chr(0x0A))
         else:
-            of.write ('¡No encontrado!',end=chr(0x0A))
+            of.write ('¡No encontrado!')
 
-of=open('output.txt', 'a')
+of=open('output.txt', 'w')
 for i in range(1,16):
     #print("archivo",i)
     n="input-"
