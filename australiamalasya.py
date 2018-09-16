@@ -31,7 +31,7 @@ def get_tag_value(f):
                     dict_tag_value['%s~%s' %(curr_tag_name, tag_name)] = tag_val
             if taglist:
                 prev_tag_name_list.append(curr_tag_name)
-    print(dict_tag_value)
+    #print(dict_tag_value)
     for count in range(int(num_query)):
         entry = f.readline().strip()
         if entry in dict_tag_value:
@@ -41,7 +41,7 @@ def get_tag_value(f):
 
 
 for i in range(1,16):
-    print("archivo",i)
+    #print("archivo",i)
     n="input-"
     if(i<10):
         n+="0"
