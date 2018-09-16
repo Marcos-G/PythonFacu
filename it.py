@@ -12,7 +12,6 @@ for i in range(len(supern)):
     J[2**(i+1)]=c
     if(supern[i]=='1'):
         check+=2**(i)
-
         acu*=h
         acu+=J[2**1]
         acu=acu%123456789
