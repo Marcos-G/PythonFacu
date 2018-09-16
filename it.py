@@ -15,7 +15,7 @@ for i in range(len(supern)):
     c+=J[2**i]
     c=c%123456789
     J[2**(i+1)]=c
-    print(len(J))
+    print(str(J))
 
 #supern="11010"[::-1]
 '''acu=0
