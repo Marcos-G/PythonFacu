@@ -3,12 +3,17 @@ import numpy as np
 
 inp = misc.imread('test.png')
 pokenumbers={}
-print((inp[40*2:40*2+40,40*6:40*6+40]-inp[0:40,0:40]).sum())
-resultado=""
+print((inp[40*2:40*2+40,40*7:40*7+40]-inp[40*i:40*i+40,40*j:40*j+40]).sum())
+calculado=""
 resultador=""
 print(len(inp))
+res=[['' for i in range(24)] for j in range(24)]
 for i in range(23):
     for j in range(24):
+        if( (i,j) not in calculados):
+            for a in range(23):
+                for b in range(24):
+                    if( (i,j) not in calculados and (inp[40*2:40*2+40,40*7:40*7+40]-inp[40*i:40*i+40,40*j:40*j+40]).sum())
         if(str(inp[400*i:400*i+400,400*j:400*j+400]) in pokenumbers):
             resultado+=str(pokenumbers[str(inp[400*i:400*i+400,400*j:400*j+400])])
             resultador+=str(pokenumbers[str(inp[400*i:400*i+400,400*j:400*j+400])])[::-1]
