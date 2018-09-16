@@ -4,13 +4,13 @@ inp="a"
 c=0
 b=True
 J={0:0}
-for i in range(2**48):
-
-    c=(c*2+(-1)**i)%123456789
-    J[i+1]=c
-    print(i+1,J[i+1])
-
 supern="110101010110000100001111011001001000001001101111"[::-1]
+
+for i in range(len(supern)):
+    c=(c*(2**(2**i))+J[2**i])%123456789
+    J[2**(i+1)]=c
+    print(str(J))
+
 #supern="11010"[::-1]
 acu=0
 check=0
