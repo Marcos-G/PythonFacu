@@ -4,7 +4,7 @@ inp="a"
 c=0
 b=True
 J={0:0}
-for i in range(70):
+for i in range(2**48):
 
     c=(c*2+(-1)**i)
     J[i+1]=c
@@ -19,7 +19,7 @@ for i in range(len(supern)):
         check+=2**(i)
         print("an+"+str(2**(i))+"=an*"+str(2**(2**(i)))+"+"+str(J[2**i]))
         print(check)
-        acu=(acu*(2**(2**i))+J[2**i])
+        acu=(acu*(2**(2**i))+J[2**i])%123456789
         print(acu)
 print(acu)
 print(check)
