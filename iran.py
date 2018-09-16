@@ -28,7 +28,7 @@ res=""
 resi=""
 for i in range(24):
     for j in range(24):
-        res+=chr(array[i][j])
-        resi+=chr(array[i][j][::-1])
+        res+=chr(int(array[i][j]))
+        resi+=chr(int(array[i][j][::-1]))
 print(res)
 print(resi)
