@@ -41,7 +41,7 @@ def get_tag_value(f):
 
 
 for i in range(1,16):
-    #print("archivo",i)
+    print("archivo",i)
     n="input-"
     if(i<10):
         n+="0"
