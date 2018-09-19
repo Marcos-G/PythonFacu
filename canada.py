@@ -117,11 +117,11 @@ moverPieza(outp,14,19,17,19)
 moverPieza(outp,16,19,15,19)
 moverPieza(outp,19,19,16,19)
 moverPieza(outp,19,19,18,19)
-for a in range(20):
+'''for a in range(20):
     for b in range(20):
         outp[a*5,b*5]=[0,0,0]
         outp[a*5,b*5+4]=[0,0,0]
         outp[a*5+4,b*5]=[0,0,0]
-        outp[a*5+4,b*5+4]=[0,0,0]
+        outp[a*5+4,b*5+4]=[0,0,0]'''
 img = Image.fromarray(outp, 'RGB')
 img.save('my1.png')
