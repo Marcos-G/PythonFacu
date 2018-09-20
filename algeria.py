@@ -1,7 +1,7 @@
 import random
 m=0
 h=0
-n=2
+n=20
 while(m<1000 and h<1000):
     if(random.randint(0,1)==1):
         m+=1
