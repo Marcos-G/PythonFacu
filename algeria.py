@@ -2,7 +2,7 @@ import random
 m=0
 h=0
 n=1
-while(m<1000 or h<1000):
+while(m<1000 and h<1000):
     if(random.randint(0,1)==1):
         m+=1
     gana=True
