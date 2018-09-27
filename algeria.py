@@ -1,12 +1,13 @@
 from scipy.special import binom,comb
 from math import ceil
+from decimal import *
 import sys
 def probMujerGanarAntesDe(n):
     print(n)
     if(n<1000):
         pm=0
     else:
-        pm=comb(n,1000,exact=True)*(pow(0.5,n))
+        pm=Decimal(comb(n,1000,exact=True))*(pow(0.5,n))
     return pm
 def probHombreGanarTurno(n,t):
     tg=ceil(1000/(2**(t-1)))
