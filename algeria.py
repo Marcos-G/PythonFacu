@@ -4,6 +4,7 @@ def probMujerGanarAntesDe(n):
     if(n<1000):
         pm=0
     else:
+        print(n)
         pm=binom(n,1000)*(pow(0.5,n))
     return pm
 def probHombreGanarTurno(n,t):
