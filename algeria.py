@@ -6,7 +6,7 @@ def probMujerNOGanarEnOAntesDe(n):
     if(n<1000):
         pm=1
     else:
-        pm=((comb(n,n-1000,exact=True)*(Decimal(0.5)**n))
+        pm=comb(n,n-1000,exact=True)*(Decimal(0.5)**n)
     return pm
 def probHombreGanarTurno(n,t):
     tg=ceil(1000/(2**(t-1)))
