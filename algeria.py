@@ -2,7 +2,7 @@ from scipy.special import binom,comb
 from math import ceil
 from decimal import *
 import sys
-def probMujerGanarAntesDe(n):
+def probMujerGanarEnOAntesDe(n):
     if(n<1000):
         pm=0
     else:
@@ -16,5 +16,5 @@ h=11
 m=1
 p=0
 for n in range(1,200000):
-    p+=probHombreGanarTurno(n,h)*(1-probMujerGanarAntesDe(n))
+    p+=probHombreGanarTurno(n,h)*(1-probMujerGanarEnOAntesDe(n))
     print(p)
