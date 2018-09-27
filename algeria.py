@@ -21,4 +21,4 @@ for n in range(1,3000):
     a=Decimal(comb(n,1000,exact=True)*(Decimal(0.5)**n))
     b=Decimal(Decimal(1.0)-Decimal(a))
     c=Decimal(Decimal(1.0)-Decimal(b))
-    print(n,a,b,c)
+    print(n,p)
