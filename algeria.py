@@ -14,4 +14,7 @@ h=11
 m=1
 p=0
 n=1
-print(probHombreGanarTurno(1,h))
+while(True):
+    p+=probHombreGanarTurno(n,h)*(1-probMujerGanarAntesDe(n))
+    n+=1
+    print(p)
