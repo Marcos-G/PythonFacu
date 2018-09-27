@@ -7,7 +7,8 @@ def probMujerGanarAntesDe(n):
         pm=binom(n,1000)*(pow(0.5,n))
 def probHombreGanarTurno(n,t):
     tg=ceil(1000/(2**(t-1)))
-    print(tg)
+    ph=binom(n-1,tg-1)*pow(pow(0.5,t),tg)*pow((1-pow(0.5,t),n-tg))
+    return ph
 h=11
 m=1
 p=0
