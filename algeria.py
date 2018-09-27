@@ -16,4 +16,4 @@ m=1
 p=0
 for n in range(1,2000):
     p=(1-probMujerGanarAntesDe(n))
-    print(binom(n,1000))
+    print(binom(n,1000,exact=True))
