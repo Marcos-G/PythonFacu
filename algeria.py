@@ -16,5 +16,5 @@ h=11
 m=1
 p=0
 for n in range(1,200000):
-    p+=probHombreGanarTurno(n,h)*(1-probMujerGanarEnOAntesDe(n))
+    p+=(Decimal(0.5)**11)*((1-Decimal(0.5)**11)**(n-1))*(1-(comb(n,1000,exact=True)*(Decimal(0.5)**n)))
     print(p)
