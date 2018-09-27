@@ -3,7 +3,6 @@ from math import ceil
 from decimal import *
 import sys
 def probMujerGanarAntesDe(n):
-    print(n)
     if(n<1000):
         pm=0
     else:
@@ -16,7 +15,6 @@ def probHombreGanarTurno(n,t):
 h=11
 m=1
 p=0
-for n in range(1,2000):
-    p*=probHombreGanarTurno(n,h)*(1-probMujerGanarAntesDe(n))
+for n in range(1,200000):
+    p+=probHombreGanarTurno(n,h)*(1-probMujerGanarAntesDe(n))
     print(p)
-print(sys.float_info)
