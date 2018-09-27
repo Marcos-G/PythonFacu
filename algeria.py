@@ -14,5 +14,5 @@ h=11
 m=1
 p=0
 for n in range(20):
-    p=p+probHombreGanarTurno(n,h)*(1-probMujerGanarAntesDe(n))
+    p=probHombreGanarTurno(n,h)*(1-probMujerGanarAntesDe(n))
     print(p)
