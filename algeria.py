@@ -15,7 +15,7 @@ def probHombreGanarTurno(n,t):
 h=11
 m=1
 p=0
-setcontext(ExtendedContext)
+setcontext(Context(prec=60, rounding=ROUND_HALF_DOWN))
 for n in range(1,3000):
     p+=(Decimal(0.5)**11)*((1-Decimal(0.5)**11)**(n-1))*(1-(comb(n,1000,exact=True)*(Decimal(0.5)**n)))
     a=Decimal(comb(n,1000,exact=True)*(Decimal(0.5)**n))
