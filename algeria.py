@@ -1,10 +1,10 @@
 from scipy.special import binom
 from math import ceil
 def probMujerGanarAntesDe(n):
+    print(n)
     if(n<1000):
         pm=0
     else:
-        print(n)
         pm=binom(n,1000)*(pow(0.5,n))
     return pm
 def probHombreGanarTurno(n,t):
