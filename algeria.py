@@ -15,6 +15,6 @@ def probHombreGanarTurno(n,t):
 h=11
 m=1
 p=0
-for n in range(1,200000):
+for n in range(1,3000):
     p+=(Decimal(0.5)**11)*((1-Decimal(0.5)**11)**(n-1))*(1-(comb(n,1000,exact=True)*(Decimal(0.5)**n)))
-    print(p)
+    print(n,(Decimal(0.5)**11)*((1-Decimal(0.5)**11)**(n-1)))
