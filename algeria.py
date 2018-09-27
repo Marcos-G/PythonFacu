@@ -6,7 +6,7 @@ def probMujerGanarAntesDe(n):
     if(n<1000):
         pm=0
     else:
-        pm=comb(n,1000)*(pow(0.5,n))
+        pm=comb(n,1000,exact=True)*(pow(0.5,n))
     return pm
 def probHombreGanarTurno(n,t):
     tg=ceil(1000/(2**(t-1)))
@@ -17,5 +17,5 @@ m=1
 p=0
 for n in range(1,2000):
     p=(1-probMujerGanarAntesDe(n))
-    print(comb(n,1000,exact=True))
+    print(pow(0.5,n))
 print(sys.float_info)
