@@ -13,8 +13,7 @@ def probHombreGanarTurno(n,t):
 h=11
 m=1
 p=0
-n=1
-while(True):
+for n in range(20):
     p+=probHombreGanarTurno(n,h)*(1-probMujerGanarAntesDe(n))
     n+=1
     print(p)
