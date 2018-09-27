@@ -18,6 +18,6 @@ p=0
 for n in range(1,3000):
     p+=(Decimal(0.5)**11)*((1-Decimal(0.5)**11)**(n-1))*(1-(comb(n,1000,exact=True)*(Decimal(0.5)**n)))
     a=Decimal(comb(n,1000,exact=True)*(Decimal(0.5)**n))
-    b=Decimal(Decimal(1)-Decimal(a))
-    c=Decimal(Decimal(1)-Decimal(b))
+    b=Decimal(Decimal(1.0)-Decimal(a))
+    c=Decimal(Decimal(1.0)-Decimal(b))
     print(n,a,b,c)
