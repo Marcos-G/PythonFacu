@@ -17,3 +17,4 @@ p=0
 for n in range(1,2000):
     p=probHombreGanarTurno(n,h)*(1-probMujerGanarAntesDe(n))
     print(p)
+print(binom(1308,1000)*(pow(0.5,1308)))
