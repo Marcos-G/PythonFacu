@@ -3,8 +3,10 @@ from math import ceil
 from decimal import *
 import sys
 def probMujerNOGanarEnOAntesDe(n):
+    if(n<1000)
+        return Decimal(1)
     pm=0
-    for g in range(999);
+    for g in range(999):
         pm+=comb(n,g,exact=True)*(Decimal(0.5)**n)
     return pm
 def probMujerGanarEnOAntesDe(n):
