@@ -2,6 +2,7 @@ from scipy.special import binom,comb
 from math import ceil
 from decimal import *
 import sys
+setcontext(Context(prec=60, rounding=ROUND_HALF_DOWN))
 def probMujerNOGanarEnOAntesDe(n):
     if(n<1000):
         return Decimal(1)
@@ -22,7 +23,6 @@ def probHombreGanarTurno(n,t):
 h=11
 m=1
 p=0
-setcontext(Context(prec=60, rounding=ROUND_HALF_DOWN))
 for n in range(1,3000):
     p=probMujerNOGanarEnOAntesDe(n)
     print(n,p)
