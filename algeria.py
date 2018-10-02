@@ -2,7 +2,7 @@ from scipy.special import binom,comb
 from math import ceil
 from decimal import *
 import sys
-setcontext(Context(prec=60, rounding=ROUND_HALF_DOWN))
+setcontext(Context(prec=200, rounding=ROUND_HALF_DOWN))
 def probMujerNOGanarEnOAntesDe(n):
     if(n<1000):
         return Decimal(1)
