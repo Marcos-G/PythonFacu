@@ -3,10 +3,9 @@ from math import ceil
 from decimal import *
 import sys
 def probMujerNOGanarEnOAntesDe(n):
-    if(n<1000):
-        pm=1
-    else:
-        pm=comb(n,n-1000,exact=True)*(Decimal(0.5)**n)
+    pm=0
+    for g in range(999);
+        pm+=comb(n,g,exact=True)*(Decimal(0.5)**n)
     return pm
 def probMujerGanarEnOAntesDe(n):
     if(n<1000):
@@ -23,5 +22,5 @@ m=1
 p=0
 setcontext(Context(prec=60, rounding=ROUND_HALF_DOWN))
 for n in range(1,3000):
-    p=probMujerNOGanarEnOAntesDe(n)+probMujerGanarEnOAntesDe(n)
+    p=probMujerNOGanarEnOAntesDe(n)
     print(n,p)
