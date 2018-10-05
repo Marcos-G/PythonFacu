@@ -25,7 +25,9 @@ for n in range(len(filelines)):
         error("Mal definido el simbolo de transicion '=>'",n,line)
     if(not (terms[0].startswith("(") and terms[0].endswith(")") and terms[1].startswith("(") and terms[1].endswith(")"))):
         error("Faltan parentesis",n,line)
-
+    terms[0]=terms[0][1:-1]
+    terms[1]=terms[1][1:-1]
+    print(str(terms)
 
 
 fileObj.close()
