@@ -7,10 +7,9 @@ if(not sys.argv[1].endswith(".ll")):
     print("ARCHIVO INCORRECTO")
     exit()
 filelines=open(sys.argv[1],'r').readlines()
-print (str(filelines))
 estados={}
 reglas={}
 alfabetoE={}
 alfabetoT={}
 for a in filelines:
-    print(a)
+    print(a.rstrip())
