@@ -6,5 +6,5 @@ if(len(sys.argv)<2):
 if(not sys.argv[1].endswith(".ll")):
     print("ARCHIVO INCORRECTO")
     exit()
-filetxt=open(sys.argv[1],'r').read()
-print (filetxt)
+filelines=open(sys.argv[1],'r').readLines()
+print (str(filelines))
