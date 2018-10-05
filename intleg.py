@@ -1,6 +1,6 @@
 import sys
 
-if(length(sys.argv)>1):
+if(len(sys.argv)>1):
     file=sys.argv[1]
     print(file)
 else:
