@@ -20,6 +20,8 @@ for n in range(len(filelines)):
     line=filelines[n].rstrip()
     if(line.startswith("//")):
         continue
+    if(line.contains("//")):
+        line=line[0:line.indexof("//")]
     if(not all(c in dict.fromkeys("qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM1234567890=>(),/") for c in line)):
         error("Caracteres no aceptados presentes",n,line)
     terms=line.split("=>")
