@@ -33,6 +33,8 @@ for n in range(len(filelines)):
     valspos=terms[1][1:-1].split(",")
     if(len(valspre)!=2 or len(valspos)!=1):
         error("Cantida de valores incorrecta en la transicion",n,line)
+    if(valspre[0] not in estados.keys()):
+        estados[valspre[0]]={}
     estados[valspre[0]][valspre[1]]["&"]=(valspos[0],"&","D")
 print(str(estados))
 
