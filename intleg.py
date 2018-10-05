@@ -11,7 +11,7 @@ if(not sys.argv[1].endswith(".ll")):
     exit()
 fileObj=open(sys.argv[1],'r')
 filelines=fileObj.readlines()
-estados={}
+automata={}
 reglas={}
 alfabetoE={}
 alfabetoT={}
@@ -33,14 +33,14 @@ for n in range(len(filelines)):
     valspos=terms[1][1:-1].split(",")
     if(len(valspre)>3 or len(valspos)>3):
         error("Cantida de valores incorrecta en la transicion",n,line)
-    if(valspre[0] not in estados.keys()):
-        estados[valspre[0]]={}
-    if(valspre[1] not in estados[valspre[0]].keys()):
-        estados[valspre[0]][valspre[1]]={}
-    if("&" not in estados[valspre[0]][valspre[1]].keys()):
-        estados[valspre[0]][valspre[1]]["&"]=[]
-    estados[valspre[0]][valspre[1]]["&"].append((valspos[0],"&","D"))
-print(str(estados))
+    if(valspre[0] not in automata.keys()):
+        automata[valspre[0]]={}
+    if(valspre[1] not in automata[valspre[0]].keys()):
+        automata[valspre[0]][valspre[1]]={}
+    if("&" not in automata[valspre[0]][valspre[1]].keys()):
+        automata[valspre[0]][valspre[1]]["&"]=[]
+    automata[valspre[0]][valspre[1]]["&"].append((valspos[0],"&","D"))
+print(str(automata))
 
 
 fileObj.close()
