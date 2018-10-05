@@ -15,7 +15,7 @@ alfabetoT={}
 for n in range(len(filelines)):
     line=filelines[n].rstrip()
     terms=line.split("=>")
-    if(not terms==2):
+    if(not len(terms)==2):
         print("ERROR EN LA LINEA",n,":",line)
 
 
