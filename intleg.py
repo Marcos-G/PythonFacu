@@ -1,5 +1,7 @@
 import sys
 
+def error(errormsg,n,line):
+    print("ERROR:",errormsg,"en la linea",n,":",line)
 if(len(sys.argv)<2):
     print("FALTA RUTA DE PROGRAMA")
     exit()
@@ -14,20 +16,15 @@ alfabetoE={}
 alfabetoT={}
 lenguaje=[]
 for n in range(len(filelines)):
-    error=False
-    errormsg=""
     line=filelines[n].rstrip()
     if(line.startswith("//")):
         continue
     terms=line.split("=>")
     if(not len(terms)==2):
-        error=True
-        errormsg="Mal definido el simbolo de transicion '=>'"
+        error("Mal definido el simbolo de transicion '=>'",n,line)
     if(not (terms[0].startswith("(") and terms[0].endswith(")") and terms[1].startswith("(") and terms[1].endswith(")"))):
-        error=True
-        errormsg="Faltan parentesis"
-    if(error):
-        print("ERROR:",errormsg,"en la linea",n,":",line)
+        error("Faltan parentesis",n,line)
+
 
 
 fileObj.close()
