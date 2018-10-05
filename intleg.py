@@ -11,7 +11,11 @@ estados={}
 reglas={}
 alfabetoE={}
 alfabetoT={}
-for line in filelines:
-    line=line.rstrip()
+for n in len(filelines):
+    line=filelines[n].rstrip()
     terms=line.split("=>")
-    print(str(terms))
+    if(not terms==2):
+        print("ERROR EN LA LINEA",n,":",line)
+
+
+filelines.close()
