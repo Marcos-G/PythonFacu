@@ -5,5 +5,5 @@ if(len(sys.argv)<2):
     exit()
 if(not sys.argv[1].endswith(".ll")):
     print("ARCHIVO INCORRECTO")
-    return 0
+    exit()
 print sys.argv[1]
