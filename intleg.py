@@ -37,7 +37,9 @@ for n in range(len(filelines)):
         estados[valspre[0]]={}
     if(valspre[1] not in estados[valspre[0]].keys()):
         estados[valspre[0]][valspre[1]]={}
-    estados[valspre[0]][valspre[1]]["&"]=(valspos[0],"&","D")
+    if("&" not in estados[valspre[0]][valspre[1]].keys()):
+        estados[valspre[0]][valspre[1]]["&"]=[]
+    estados[valspre[0]][valspre[1]]["&"].append((valspos[0],"&","D"))
 print(str(estados))
 
 
