@@ -12,11 +12,13 @@ estados={}
 reglas={}
 alfabetoE={}
 alfabetoT={}
+lenguaje=[]
 for n in range(len(filelines)):
     line=filelines[n].rstrip()
     terms=line.split("=>")
     if(not len(terms)==2):
         print("ERROR EN LA LINEA",n,":",line)
+    
 
 
 fileObj.close()
