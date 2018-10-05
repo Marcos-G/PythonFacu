@@ -4,10 +4,10 @@ def error(errormsg,n,line):
     print"ERROR:",errormsg,"en la linea",n,":",line
     exit()
 if(len(sys.argv)<2):
-    print("FALTA RUTA DE PROGRAMA")
+    print"FALTA RUTA DE PROGRAMA"
     exit()
 if(not sys.argv[1].endswith(".ll")):
-    print("ARCHIVO INCORRECTO")
+    print"ARCHIVO INCORRECTO"
     exit()
 fileObj=open(sys.argv[1],'r')
 filelines=fileObj.readlines()
