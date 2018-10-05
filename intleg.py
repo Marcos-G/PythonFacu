@@ -21,7 +21,7 @@ for n in range(len(filelines)):
     if(line.startswith("//")):
         continue
     if("//" in line):
-        line=line[0:line.indexof("//")]
+        line=line[0:line.index("//")]
         print(line)
     if(not all(c in dict.fromkeys("qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM1234567890=>(),/") for c in line)):
         error("Caracteres no aceptados presentes",n,line)
