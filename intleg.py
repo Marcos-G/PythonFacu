@@ -11,7 +11,7 @@ estados={}
 reglas={}
 alfabetoE={}
 alfabetoT={}
-for n in len(filelines):
+for n in range(len(filelines)):
     line=filelines[n].rstrip()
     terms=line.split("=>")
     if(not terms==2):
