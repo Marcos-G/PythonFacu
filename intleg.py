@@ -27,7 +27,7 @@ for n in range(len(filelines)):
         error("Faltan parentesis",n,line)
     terms[0]=terms[0][1:-1]
     terms[1]=terms[1][1:-1]
-    print(str(terms)
+    print(str(terms))
 
 
 fileObj.close()
