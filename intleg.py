@@ -11,5 +11,7 @@ estados={}
 reglas={}
 alfabetoE={}
 alfabetoT={}
-for a in filelines:
-    print(a.rstrip())
+for line in filelines:
+    line=line.rstrip()
+    terms=a.split("=>")
+    print(str(terms))
