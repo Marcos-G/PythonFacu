@@ -13,5 +13,5 @@ alfabetoE={}
 alfabetoT={}
 for line in filelines:
     line=line.rstrip()
-    terms=a.split("=>")
+    terms=line.split("=>")
     print(str(terms))
