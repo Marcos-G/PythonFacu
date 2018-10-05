@@ -6,7 +6,8 @@ if(len(sys.argv)<2):
 if(not sys.argv[1].endswith(".ll")):
     print("ARCHIVO INCORRECTO")
     exit()
-filelines=open(sys.argv[1],'r').readlines()
+fileObj=open(sys.argv[1],'r')
+filelines=fileObj.readlines()
 estados={}
 reglas={}
 alfabetoE={}
@@ -18,4 +19,4 @@ for n in range(len(filelines)):
         print("ERROR EN LA LINEA",n,":",line)
 
 
-filelines.close()
+fileObj.close()
