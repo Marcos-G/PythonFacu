@@ -31,10 +31,12 @@ for n in range(len(filelines)):
         error("Faltan parentesis",n,line)
     valspre=terms[0][1:-1].split(",")
     valspos=terms[1][1:-1].split(",")
-    if(len(valspre)!=2 or len(valspos)!=1):
+    if(len(valspre)>3 or len(valspos)>3):
         error("Cantida de valores incorrecta en la transicion",n,line)
     if(valspre[0] not in estados.keys()):
         estados[valspre[0]]={}
+    if(valspre[1] not in estados[valspre[0]].keys()):
+        estados[valspre[0]][valspre[1]]={}
     estados[valspre[0]][valspre[1]]["&"]=(valspos[0],"&","D")
 print(str(estados))
 
