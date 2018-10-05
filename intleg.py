@@ -11,7 +11,7 @@ if(not sys.argv[1].endswith(".ll")):
     exit()
 fileObj=open(sys.argv[1],'r')
 filelines=fileObj.readlines()
-estados=[]
+estados={}
 reglas={}
 alfabetoE={}
 alfabetoT={}
@@ -25,9 +25,12 @@ for n in range(len(filelines)):
         error("Mal definido el simbolo de transicion '=>'",n,line)
     if(not (terms[0].startswith("(") and terms[0].endswith(")") and terms[1].startswith("(") and terms[1].endswith(")"))):
         error("Faltan parentesis",n,line)
-    terms[0]=terms[0][1:-1]
-    terms[1]=terms[1][1:-1]
-    print(str(terms))
+    valspre=terms[0][1:-1].split(",")
+    valspos=terms[1][1:-1].split(",")
+    if(len(valspre)!=2 len(valspos)!=1):
+        error("Cantida de valores incorrecta en la transicion",n,line)
+    estados[valspre[0]]={(valspre[1],"&")=>(valspos[0],"&","D")}
+print(str(estados))
 
 
 fileObj.close()
