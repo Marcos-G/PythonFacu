@@ -27,7 +27,7 @@ for n in range(len(filelines)):
         error("Faltan parentesis",n,line)
     valspre=terms[0][1:-1].split(",")
     valspos=terms[1][1:-1].split(",")
-    if(len(valspre)!=2 len(valspos)!=1):
+    if(len(valspre)!=2 or len(valspos)!=1):
         error("Cantida de valores incorrecta en la transicion",n,line)
     estados[valspre[0]]={(valspre[1],"&")=>(valspos[0],"&","D")}
 print(str(estados))
