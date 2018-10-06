@@ -39,9 +39,9 @@ for n in range(len(filelines)):
         automata[valspre[0]]={}
     if(valspre[1] not in automata[valspre[0]].keys()):
         automata[valspre[0]][valspre[1]]={}
-    if("&" not in automata[valspre[0]][valspre[1]].keys()):
-        automata[valspre[0]][valspre[1]]["&"]=[]
-    automata[valspre[0]][valspre[1]]["&"].append((valspos[0],"&","D"))
+    if((valspre[2:]+["&"])[0] not in automata[valspre[0]][valspre[1]].keys()):
+        automata[valspre[0]][valspre[1]][(valspre[2:]+["&"])[0]]=[]
+    automata[valspre[0]][valspre[1]][(valspre[2:]+["&"])[0]].append((valspos[0],(valspos[1:]+["&"])[0],(valspos[2:]+["D"])[0]))
 print(str(aceptadores))
 print(str(automata))
 
