@@ -12,6 +12,7 @@ if(not (sys.argv[1].endswith(".al") or sys.argv[1].endswith(".gl"))):
 fileObj=open(sys.argv[1],'r')
 filelines=fileObj.readlines()
 aceptadores=[]
+automata={}
 for n in range(len(filelines)):
     line=filelines[n].rstrip()
     if(line.startswith("//")):
@@ -19,7 +20,8 @@ for n in range(len(filelines)):
     if(len(aceptadores)==0):
         if(line.startswith("*")):
             line=line[1:]
-            print(line)
+            aceptadores+=line.split(",")
+            continue
         else:
             error("Estados Aceptadores no definidos",n,line)
     if("//" in line):
